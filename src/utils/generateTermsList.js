@@ -1,4 +1,4 @@
-function generateTermsList(entries = []) {
+export default function generateTermsList(entries = []) {
   return entries
     .flatMap((entry) => {
       if (!entry.terms) {
@@ -26,5 +26,3 @@ function generateTermsList(entries = []) {
     })
     .filter((t) => t.status !== 'avoid' && t.status !== 'to_be_defined')
 }
-
-export { generateTermsList }

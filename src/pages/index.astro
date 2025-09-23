@@ -2,11 +2,16 @@
 import Layout from '../layouts/Layout.astro'
 
 import { getFRTerms } from '@/sanity/sanity'
+import generateTermsList from '@/utils/generateTermsList'
 
-const terms = getFRTerms()
+const terms = await getFRTerms()
+
+const list = generateTermsList(terms)
 ---
 
 <Layout title="Suche">
   <h1 class="text-5xl">Terminofeu</h1>
-  <ul>{terms}</ul>
+  <ul>
+    {list.map((item) => <li>{item.term}</li>)}
+  </ul>
 </Layout>
