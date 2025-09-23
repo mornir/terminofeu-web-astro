@@ -17,6 +17,7 @@
     "astro": "^5.13.10",
     "astro-icon": "^1.1.5",
     "astro-portabletext": "^0.11.3",
+    "fuse.js": "^7.1.0",
     "groq": "^4.9.0",
     "tailwindcss": "^4.1.13"
   }

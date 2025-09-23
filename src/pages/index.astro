@@ -1,7 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro'
+
+import { getFRTerms } from '@/sanity/sanity'
+
+const terms = getFRTerms()
 ---
 
 <Layout title="Suche">
-  <h1 class="text-5xl">Astro</h1>
+  <h1 class="text-5xl">Terminofeu</h1>
+  <ul>{terms}</ul>
 </Layout>
