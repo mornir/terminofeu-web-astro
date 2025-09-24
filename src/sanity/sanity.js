@@ -1,6 +1,6 @@
 import { createClient } from '@sanity/client'
 
-import { defineQuery } from 'groq'
+import groq from 'groq'
 
 const client = createClient({
   projectId: 'nipfx4rq',
@@ -9,10 +9,10 @@ const client = createClient({
   apiVersion: '2025-09-23',
 })
 
-const query =
-  defineQuery(`*[_type == "entry" && status in ["approved", "validated", "in_force"]] {
+export async function getTerms(locale) {
+  return client.fetch(groq`*[_type == "entry" && status in ["approved", "validated", "in_force"]] {
       _id,
-      "terms": content.fr.terms[] {
+      "terms": content.${locale}.terms[] {
                 _key,
                 designation,
                 abbreviation,
@@ -20,7 +20,4 @@ const query =
         }
     }
     `)
-
-export async function getFRTerms() {
-  return client.fetch(query)
 }

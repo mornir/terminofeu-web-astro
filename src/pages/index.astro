@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import { getLocale } from 'astro-i18n-aut'
 
-import { getFRTerms } from '@/sanity/sanity'
+import { getTerms } from '@/sanity/sanity'
 import generateTermsList from '@/utils/generateTermsList'
 
-const terms = await getFRTerms()
+const terms = await getTerms(getLocale(Astro.url))
 
 const list = generateTermsList(terms)
 ---
