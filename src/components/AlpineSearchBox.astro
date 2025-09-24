@@ -1,5 +1,11 @@
 ---
 import { Icon } from 'astro-icon/components'
+
+interface Props {
+  terms: []
+}
+
+const { terms = [] } = Astro.props
 ---
 
 <form
@@ -63,11 +69,11 @@ import { Icon } from 'astro-icon/components'
           x-text="result.item.vedette"
           class="text-lg py-2 px-8 block"></a>
 
-        <Icon
+        <!--      <Icon
           name="icon-park-outline:enter-key"
           class="text-4xl text-white pl-4 absolute pointer-events-none right-5 top-1 hidden xl:inline"
           x-show="index == selectedIndex"
-        />
+        /> -->
       </li>
     </template>
   </ul>
@@ -82,28 +88,18 @@ import { Icon } from 'astro-icon/components'
   </div>
 </form>
 
-<script>
+<script define:vars={{ terms }}>
+  console.log(terms)
+
   import Alpine from 'alpinejs'
   import Fuse from 'fuse.js'
-  import list from '../data/vedettes.json'
 
   const fuseOptions = {
-    // isCaseSensitive: false,
-    // includeScore: false,
-    // shouldSort: true,
-    // includeMatches: false,
-    // findAllMatches: false,
-    // minMatchCharLength: 1,
-    // location: 0,
-    threshold: 0.2,
-    distance: 25,
-    // useExtendedSearch: false,
-    // ignoreLocation: false,
-    // ignoreFieldNorm: false,
-    // fieldNormWeight: 1,
-    keys: ['vedette'],
+    keys: ['term'],
+    ignoreLocation: true,
+    threshold: 0.1,
   }
-  const fuse = new Fuse(list, fuseOptions)
+  const fuse = new Fuse(terms, fuseOptions)
 
   document.addEventListener('alpine:init', () => {
     Alpine.data('search', () => ({

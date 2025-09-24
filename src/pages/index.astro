@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import { getLocale } from 'astro-i18n-aut'
+import AlpineSearchBox from '@/components/AlpineSearchBox.astro'
 
 import { getTerms } from '@/sanity/sanity'
 import generateTermsList from '@/utils/generateTermsList'
@@ -12,6 +13,8 @@ const list = generateTermsList(terms)
 
 <Layout title="Suche">
   <h1 class="text-5xl">Terminofeu</h1>
+  <AlpineSearchBox terms={terms} />
+
   <ul>
     {list.map((item) => <li>{item.term}</li>)}
   </ul>
