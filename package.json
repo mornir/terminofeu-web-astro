@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "latest": "pnpm update --interactive --latest"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.9",
@@ -21,7 +22,7 @@
     "astro-icon": "^1.1.5",
     "astro-portabletext": "^0.11.3",
     "fuse.js": "^7.1.0",
-    "groq": "^4.9.0",
+    "groq": "^4.10.0",
     "tailwindcss": "^4.1.13"
   },
   "engines": {

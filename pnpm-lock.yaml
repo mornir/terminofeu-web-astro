@@ -45,8 +45,8 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0
       groq:
-        specifier: ^4.9.0
-        version: 4.9.0
+        specifier: ^4.10.0
+        version: 4.10.0
       tailwindcss:
         specifier: ^4.1.13
         version: 4.1.13
@@ -1235,8 +1235,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  groq@4.9.0:
-    resolution: {integrity: sha512-DJE6vQ1UQASBvPTxzgPiUdrmIe/UD4GNxmLm0tbk2WFcsbg/N5dWCld/6JZpS+LTegd1UTAmsZoeboMrkgIXxA==}
+  groq@4.10.0:
+    resolution: {integrity: sha512-RnnDfo15fz8WdZm380R+oiUXs6yFVlZ14g4eao3rjlzaKmzD/kaXf/OhGQ+k+jjKnYeK5iJdGCesFY1IYTev4w==}
     engines: {node: '>=20.19 <22 || >=22.12'}
 
   h3@1.15.4:
@@ -3463,7 +3463,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  groq@4.9.0: {}
+  groq@4.10.0: {}
 
   h3@1.15.4:
     dependencies:
