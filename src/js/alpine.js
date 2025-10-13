@@ -33,7 +33,7 @@ export default (Alpine) => {
     },
     goToFiche() {
       if (this.searchResults.length) {
-        window.location.href = `/fiches/${
+        window.location.href = `/eintrag/${
           this.searchResults[this.selectedIndex].item.slug
         }/`
       }
