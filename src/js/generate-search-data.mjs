@@ -38,17 +38,15 @@ async function main() {
   const terms = generateTermsList(list)
 
   fs.writeFileSync(
-    'public/search-data.json',
+    'src/terms-list.json',
     JSON.stringify(terms, null, 2),
     'utf-8'
   )
 
-  console.log(
-    `✅ Generated public/search-data.json with ${terms.length} entries`
-  )
+  console.log(`✅ Generated terms-list.json with ${terms.length} entries`)
 }
 
 main().catch((err) => {
-  console.error('❌ Error generating search-data.json:', err)
+  console.error('❌ Error generating terms-list.json:', err)
   process.exit(1)
 })

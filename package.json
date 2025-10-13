@@ -4,11 +4,11 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "node src/js/generate-search-data.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "latest": "pnpm update --interactive --latest",
-    "term": "node src/js/generate-search-data.mjs"
+    "latest": "pnpm update --interactive --latest"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.9",

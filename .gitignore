@@ -24,3 +24,6 @@ pnpm-debug.log*
 .idea/
 
 astro_tmp_pages_*
+
+# this file is generated in prebuild
+src/terms-list.json

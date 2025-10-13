@@ -6,7 +6,7 @@ if (!response.ok) throw new Error('Cannot get terms list' + response.statusText)
 
 const list = await response.json() */
 
-import list from '../../public/search-data.json'
+import list from '../terms-list.json'
 
 const fuseOptions = {
   keys: ['term'],
