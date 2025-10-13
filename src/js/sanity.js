@@ -9,10 +9,10 @@ const client = createClient({
   apiVersion: '2025-09-23',
 })
 
-export async function getTerms(locale) {
+export async function getTerms() {
   return client.fetch(groq`*[_type == "entry" && status in ["approved", "validated", "in_force"]] {
       _id,
-      "terms": content.${locale}.terms[] {
+      "terms": content.fr.terms[] {
                 _key,
                 designation,
                 abbreviation,

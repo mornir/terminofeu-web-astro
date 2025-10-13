@@ -1,0 +1,1220 @@
+[
+  {
+    "key": "t_94ca3fe2b514",
+    "entry_id": "0368bf9a-dd16-4de5-8b97-b5364a6086ff",
+    "term": "surface de plancher totale",
+    "status": "main"
+  },
+  {
+    "key": "t_b1cfa62288e4",
+    "entry_id": "036b5f3f-20e9-40e2-8990-ec24e55ff5ea",
+    "term": "obturation",
+    "status": "main"
+  },
+  {
+    "key": "t_a0130344bb48",
+    "entry_id": "06125655-69c5-4d5a-900c-fe8892915cec",
+    "term": "système composite d'isolation thermique par l'extérieur",
+    "status": "main"
+  },
+  {
+    "key": "a_a0130344bb48",
+    "entry_id": "06125655-69c5-4d5a-900c-fe8892915cec",
+    "term": "ETICS",
+    "status": "main"
+  },
+  {
+    "key": "t_25130fbc9e96",
+    "entry_id": "07dad36c-21bd-4e19-b83a-c928e0e25dfb",
+    "term": "niveau hors terre",
+    "status": "main"
+  },
+  {
+    "key": "t_bb7c815e8f23",
+    "entry_id": "08d38882-be44-45c9-92f6-90d523978eb6",
+    "term": "assurance qualité en protection incendie",
+    "status": "main"
+  },
+  {
+    "key": "t_9e8eb2ea4ab0",
+    "entry_id": "095c04e9-bb6e-4294-8e9a-e32aa9e67eb4",
+    "term": "poste incendie",
+    "status": "main"
+  },
+  {
+    "key": "t_b72268ebde84",
+    "entry_id": "0ee7045a-7876-4395-860f-d24aebdec881",
+    "term": "maintenance",
+    "status": "main"
+  },
+  {
+    "key": "t_bad500de3a1f",
+    "entry_id": "10971c77-16d2-4b2e-9744-96f3353a09c0",
+    "term": "ligne d'amenée",
+    "status": "main"
+  },
+  {
+    "key": "t_26fd0ea17a46",
+    "entry_id": "11ff9a2b-c44e-447b-b1e6-ceb07100110b",
+    "term": "délimitation du système pour la définition de l’exposition au danger",
+    "status": "main"
+  },
+  {
+    "key": "t_a158295f91aa",
+    "entry_id": "13bd152a-1816-4e16-b2ae-f392651bc4b1",
+    "term": "voie d'évacuation horizontale",
+    "status": "main"
+  },
+  {
+    "key": "t_33aeea93291d",
+    "entry_id": "160da6cb-94b7-4837-b05f-09b607792344",
+    "term": "test de black-out",
+    "status": "main"
+  },
+  {
+    "key": "t_d623c7eec4f6",
+    "entry_id": "184ca92d-4a12-4d59-a165-81502d1addd3",
+    "term": "système automatique d’extinction à eau",
+    "status": "main"
+  },
+  {
+    "key": "a_d623c7eec4f6",
+    "entry_id": "184ca92d-4a12-4d59-a165-81502d1addd3",
+    "term": "SAEE",
+    "status": "main"
+  },
+  {
+    "key": "t_9525c2a2eba4",
+    "entry_id": "1a7d7103-b4ce-4b91-8e92-8664e28dd6c7",
+    "term": "coûts du cycle de vie",
+    "status": "main"
+  },
+  {
+    "key": "t_cd20bb0c8b8e",
+    "entry_id": "1acf86de-408b-4296-981f-2983913a5288",
+    "term": "ensemble d’appareillage",
+    "status": "main"
+  },
+  {
+    "key": "t_52bd79819735",
+    "entry_id": "1b8e4628-4800-4509-9a15-0204c3cd596e",
+    "term": "scénario \"worst case\"",
+    "status": "main"
+  },
+  {
+    "key": "t_9f96f5d510aa",
+    "entry_id": "1c716c97-491f-436c-ab7f-383e4cb52ef1",
+    "term": "course de mise en état de disponibilité pour l’intervention (phase 1)",
+    "status": "main"
+  },
+  {
+    "key": "t_5fc9c56c7586",
+    "entry_id": "1d31aa7e-dae3-4662-af0d-517a1d3e52e2",
+    "term": "test intégral",
+    "status": "main"
+  },
+  {
+    "key": "t_b59c7df034e3",
+    "entry_id": "1dd8adc5-9908-4551-98eb-4aa2fdbbab55",
+    "term": "système de mise en surpression",
+    "status": "main"
+  },
+  {
+    "key": "a_b59c7df034e3",
+    "entry_id": "1dd8adc5-9908-4551-98eb-4aa2fdbbab55",
+    "term": "SMS",
+    "status": "main"
+  },
+  {
+    "key": "t_6a1a2b6d10a5",
+    "entry_id": "1fd95f84-1b20-49a3-8b31-740e17eed30f",
+    "term": "zone",
+    "status": "main"
+  },
+  {
+    "key": "t_da501c6052f1",
+    "entry_id": "21b730ed-0e39-400e-8521-40f2ea345d2b",
+    "term": "air vicié",
+    "status": "main"
+  },
+  {
+    "key": "t_0161961e3dfb",
+    "entry_id": "21b730ed-0e39-400e-8521-40f2ea345d2b",
+    "term": "air repris",
+    "status": "variant"
+  },
+  {
+    "key": "t_0e7529c78da6",
+    "entry_id": "22b382a0-e284-4356-98b8-0ce599faff95",
+    "term": "toiture",
+    "status": "main"
+  },
+  {
+    "key": "t_e6a0242ae840",
+    "entry_id": "22dac5c2-cf37-4adb-a53f-40e8185c0ab4",
+    "term": "explosion",
+    "status": null
+  },
+  {
+    "key": "t_8a9a02468fff",
+    "entry_id": "24a88f4c-bcee-4bb2-bd58-b47fd1539b75",
+    "term": "système de gestion de batterie",
+    "status": null
+  },
+  {
+    "key": "a_8a9a02468fff",
+    "entry_id": "24a88f4c-bcee-4bb2-bd58-b47fd1539b75",
+    "term": "BMS",
+    "status": null
+  },
+  {
+    "key": "t_4474d2a81a9c",
+    "entry_id": "250abe00-8359-4d5e-9218-72d1b5abd121",
+    "term": "engin pyrotechnique",
+    "status": "main"
+  },
+  {
+    "key": "t_6df21c41af07",
+    "entry_id": "254554ee-d328-401d-bba0-8ef48341a7ef",
+    "term": "éclairage de sécurité",
+    "status": null
+  },
+  {
+    "key": "t_d94182ea7ce4",
+    "entry_id": "2590bdc7-20fc-4589-8d46-1c377902c929",
+    "term": "indice de transmission de la parole",
+    "status": "main"
+  },
+  {
+    "key": "a_d94182ea7ce4",
+    "entry_id": "2590bdc7-20fc-4589-8d46-1c377902c929",
+    "term": "STI",
+    "status": "main"
+  },
+  {
+    "key": "t_6a33cf0b4a36",
+    "entry_id": "2666f0f4-2ad6-4c02-abb9-2e435a7bcba2",
+    "term": "incendie de dimensionnement",
+    "status": "main"
+  },
+  {
+    "key": "t_ad34b12236dd",
+    "entry_id": "29eb9829-6bad-4c45-a1c8-11c79bb89861",
+    "term": "exposition au feu",
+    "status": null
+  },
+  {
+    "key": "t_55859dc9d6bd",
+    "entry_id": "2a354a06-f323-4ff3-80f8-d05cf12e2c55",
+    "term": "densité de charge calorifique moyenne",
+    "status": "main"
+  },
+  {
+    "key": "t_f32ae466c4d6",
+    "entry_id": "2df5433f-b977-463d-b3ce-b2fd01731386",
+    "term": "zone de fuite",
+    "status": "main"
+  },
+  {
+    "key": "t_9bec00e575eb",
+    "entry_id": "3041d1b9-7c5c-410c-a170-a19174a53aa4",
+    "term": "intelligibilité de la parole",
+    "status": "main"
+  },
+  {
+    "key": "t_b823e2b32e0a",
+    "entry_id": "305766c3-e7db-4cf5-a2e4-83b05ca1cef3",
+    "term": "système de conduits combinés air-fumées",
+    "status": "main"
+  },
+  {
+    "key": "t_30c3a2ba4e8e",
+    "entry_id": "309bcf87-90e2-409e-8295-eb928d167a5a",
+    "term": "bâtiment",
+    "status": "main"
+  },
+  {
+    "key": "t_98cc3590f5c4",
+    "entry_id": "310fb870-bb43-4348-ba87-e34bcff22f6a",
+    "term": "plan d'évacuation et de secours",
+    "status": null
+  },
+  {
+    "key": "t_21b8599d14ea",
+    "entry_id": "313b1a8b-0790-42cf-87d3-c7b75ab86b75",
+    "term": "cabine",
+    "status": "main"
+  },
+  {
+    "key": "t_07b00192cb65",
+    "entry_id": "325532ec-6bb8-4b7b-909d-5133f0eff1c9",
+    "term": "appareil d'extinction",
+    "status": "main"
+  },
+  {
+    "key": "t_77361acd521b",
+    "entry_id": "32e1291e-f93c-4503-9b4c-ec5f1122f043",
+    "term": "évacuation",
+    "status": "main"
+  },
+  {
+    "key": "t_058f4cd2940e",
+    "entry_id": "360199b9-eb06-4583-8237-180378e53751",
+    "term": "système d'asservissement incendie",
+    "status": "main"
+  },
+  {
+    "key": "a_058f4cd2940e",
+    "entry_id": "360199b9-eb06-4583-8237-180378e53751",
+    "term": "SAI",
+    "status": "main"
+  },
+  {
+    "key": "t_6f3b93bef195",
+    "entry_id": "360199b9-eb06-4583-8237-180378e53751",
+    "term": "asservissement incendie",
+    "status": "variant"
+  },
+  {
+    "key": "t_f0f25c39d7ae",
+    "entry_id": "36717573-e143-4260-bd48-8d15a8c1bbce",
+    "term": "dispositif de protection",
+    "status": "main"
+  },
+  {
+    "key": "t_1621ea998c2f",
+    "entry_id": "36ebb45c-07be-4cbd-a336-6d2caac584cd",
+    "term": "intervention",
+    "status": "main"
+  },
+  {
+    "key": "t_b5a2db59b380",
+    "entry_id": "370f67a1-27f5-40c5-8b88-d53f8504c20e",
+    "term": "signal d'équipements de lutte contre l'incendie",
+    "status": null
+  },
+  {
+    "key": "t_eb3d251100dd",
+    "entry_id": "39a33f93-da71-4de0-a1c9-77b61f4eebd5",
+    "term": "dispositif d'extinction",
+    "status": "main"
+  },
+  {
+    "key": "t_7aed627c6dde",
+    "entry_id": "3df5dd27-4bf7-402f-aef4-7c2c658309d3",
+    "term": "réseau de conduits d’air",
+    "status": "main"
+  },
+  {
+    "key": "t_3a8f16e0d0d1",
+    "entry_id": "3e2db724-fd38-4e0e-8b40-53ac7005f8d4",
+    "term": "alarme",
+    "status": "main"
+  },
+  {
+    "key": "t_db7008d2b220",
+    "entry_id": "3e66dcfb-9c7f-4d4f-a7b4-ff34c969a903",
+    "term": "compartiment coupe-feu",
+    "status": "main"
+  },
+  {
+    "key": "t_5b39546133c6",
+    "entry_id": "4007392d-9726-4821-8c8a-160ca3019c27",
+    "term": "surveillance des dérangements",
+    "status": "main"
+  },
+  {
+    "key": "t_45ecb19aeab8",
+    "entry_id": "40d12739-d404-456f-8243-4da282192203",
+    "term": "groupe électrogène",
+    "status": "main"
+  },
+  {
+    "key": "t_4bc09dc00e3e",
+    "entry_id": "40e7f8d4-0504-47f6-a753-85661ec7328e",
+    "term": "ligne principale",
+    "status": "main"
+  },
+  {
+    "key": "t_2f3bb5e0af84",
+    "entry_id": "40e7f8d4-0504-47f6-a753-85661ec7328e",
+    "term": "colonne principale",
+    "status": "variant"
+  },
+  {
+    "key": "t_f3e340ff9157",
+    "entry_id": "45f8c733-44ac-4e92-b506-9ff9794c35ba",
+    "term": "scénario",
+    "status": "main"
+  },
+  {
+    "key": "t_e02963b9af10",
+    "entry_id": "484cb998-5a38-4be6-a474-9a710ea9240d",
+    "term": "conséquence",
+    "status": "main"
+  },
+  {
+    "key": "t_f8d81b9541e2",
+    "entry_id": "4a7b9f5e-f380-4a25-a360-ae8d5c6b5070",
+    "term": "exposition au danger",
+    "status": "main"
+  },
+  {
+    "key": "t_2432ca9897df",
+    "entry_id": "4baea705-462a-4c0d-a045-acb056bc9dfd",
+    "term": "système d’ascenseur pour l’intervention des sapeurs-pompiers",
+    "status": "main"
+  },
+  {
+    "key": "a_2432ca9897df",
+    "entry_id": "4baea705-462a-4c0d-a045-acb056bc9dfd",
+    "term": "système ASC-SP",
+    "status": "main"
+  },
+  {
+    "key": "t_2d1c33003f39",
+    "entry_id": "4ca06c57-7637-45bf-bdf5-f3d2da245157",
+    "term": "système de protection contre la foudre",
+    "status": "main"
+  },
+  {
+    "key": "t_441c018e5bf7",
+    "entry_id": "4fe7ecba-16a6-4cef-9b29-328f4fa100eb",
+    "term": "voie de transmission",
+    "status": "main"
+  },
+  {
+    "key": "t_3d352ec4b049",
+    "entry_id": "50fe7c86-e206-4ef3-a5bc-2d0473e05a8e",
+    "term": "cantonnement des fumées",
+    "status": "main"
+  },
+  {
+    "key": "t_906649b5477d",
+    "entry_id": "510aa28d-b525-49cf-8de6-15bd8c5dcb26",
+    "term": "système de goulottes",
+    "status": "main"
+  },
+  {
+    "key": "t_c422cea542df",
+    "entry_id": "5239952c-b9d0-4714-8a1e-37059c07f2f0",
+    "term": "installation aéraulique",
+    "status": "main"
+  },
+  {
+    "key": "t_e59baf5941a5",
+    "entry_id": "5335ec11-f078-4303-ae5d-513e74657fbf",
+    "term": "surface de plancher",
+    "status": "main"
+  },
+  {
+    "key": "a_e59baf5941a5",
+    "entry_id": "5335ec11-f078-4303-ae5d-513e74657fbf",
+    "term": "SP",
+    "status": "main"
+  },
+  {
+    "key": "t_7d01e39a3f52",
+    "entry_id": "53c95bae-0672-4154-b1e6-114e07440d28",
+    "term": "signal de sécurité",
+    "status": null
+  },
+  {
+    "key": "t_c0bac6b55b1b",
+    "entry_id": "541ad14e-4814-47a6-8dc0-c90673cf3833",
+    "term": "système stationnaire de l'énergie électrique",
+    "status": "main"
+  },
+  {
+    "key": "t_d0a2707141a2",
+    "entry_id": "54bed143-2cc3-4955-bdfb-c4b0144b38b3",
+    "term": "local",
+    "status": "main"
+  },
+  {
+    "key": "t_d0a4284f2c61",
+    "entry_id": "57196cca-f4b0-4843-8110-ea286e162fb1",
+    "term": "enveloppe",
+    "status": "main"
+  },
+  {
+    "key": "t_b16862fda104",
+    "entry_id": "575e7837-6ab1-4ecd-ab0c-ef6326347395",
+    "term": "installation naturelle d’extraction de fumée et de chaleur",
+    "status": null
+  },
+  {
+    "key": "a_b16862fda104",
+    "entry_id": "575e7837-6ab1-4ecd-ab0c-ef6326347395",
+    "term": "INEFC",
+    "status": null
+  },
+  {
+    "key": "t_f78523b36821",
+    "entry_id": "5afbd83d-9cf9-47a9-9fc7-cb01e0151cb8",
+    "term": "alimentation de sécurité",
+    "status": null
+  },
+  {
+    "key": "a_f78523b36821",
+    "entry_id": "5afbd83d-9cf9-47a9-9fc7-cb01e0151cb8",
+    "term": "AS",
+    "status": null
+  },
+  {
+    "key": "t_6257555ead8e",
+    "entry_id": "5c1ca472-e54b-4384-b6bc-33665ad6449b",
+    "term": "secteur ou lieu sûr",
+    "status": "main"
+  },
+  {
+    "key": "t_0c14e84c9a9d",
+    "entry_id": "5d6d1dcf-dd2d-4260-acc1-3df45e2cb7c8",
+    "term": "réaction au feu",
+    "status": "main"
+  },
+  {
+    "key": "t_8c17b1b59bb6",
+    "entry_id": "5e2a559e-da8d-47c0-a469-b4e6caf7f382",
+    "term": "ligne d'abonné",
+    "status": "main"
+  },
+  {
+    "key": "t_61918dec3a08",
+    "entry_id": "603e6049-602c-48f4-9df5-45287885bd62",
+    "term": "installation d'extinction à gaz",
+    "status": "main"
+  },
+  {
+    "key": "t_8ece682fd918",
+    "entry_id": "63d44cb0-bbd8-47b9-bd27-1c08cb6f89e1",
+    "term": "étendue de l’alarme",
+    "status": "main"
+  },
+  {
+    "key": "t_8701065b7465",
+    "entry_id": "66f92e74-2e00-47ae-93ee-3c4684223438",
+    "term": "scénario de dimensionnement",
+    "status": "main"
+  },
+  {
+    "key": "t_c52619068e8c",
+    "entry_id": "66f92e74-2e00-47ae-93ee-3c4684223438",
+    "term": "scénario d'incendie de dimensionnement",
+    "status": "variant"
+  },
+  {
+    "key": "t_bed3c6aaaeb4",
+    "entry_id": "67aefcd1-418b-4377-a814-4594cef2d433",
+    "term": "organisation en cas d’incendie",
+    "status": "main"
+  },
+  {
+    "key": "a_bed3c6aaaeb4",
+    "entry_id": "67aefcd1-418b-4377-a814-4594cef2d433",
+    "term": "OCI",
+    "status": "main"
+  },
+  {
+    "key": "t_43611a440651",
+    "entry_id": "6841d658-8c7a-4027-93de-ffff59818723",
+    "term": "colonne montante",
+    "status": "main"
+  },
+  {
+    "key": "t_6c291638d1e0",
+    "entry_id": "6841d658-8c7a-4027-93de-ffff59818723",
+    "term": "conduite d'eau d'extinction",
+    "status": "variant"
+  },
+  {
+    "key": "t_52cac86e060c",
+    "entry_id": "68fcdafb-9bd6-4d69-af5c-b27602d2d3ff",
+    "term": "distance de sécurité incendie",
+    "status": "main"
+  },
+  {
+    "key": "t_ad4f598708bf",
+    "entry_id": "695cb713-284b-49dc-831a-9e22b387cead",
+    "term": "alarme interne",
+    "status": "main"
+  },
+  {
+    "key": "t_fd0998ae2774",
+    "entry_id": "6a25a3fe-702f-46c2-a4f2-24744129b359",
+    "term": "surface de construction",
+    "status": "main"
+  },
+  {
+    "key": "a_fd0998ae2774",
+    "entry_id": "6a25a3fe-702f-46c2-a4f2-24744129b359",
+    "term": "SC",
+    "status": "main"
+  },
+  {
+    "key": "t_a84b9469a230",
+    "entry_id": "6b1b1a58-3a93-4e9a-ac00-e48a11f80f48",
+    "term": "voie de sauvetage",
+    "status": "main"
+  },
+  {
+    "key": "t_0b2f5d307323",
+    "entry_id": "6b4367af-46a6-4573-b361-78616a3831b7",
+    "term": "façade double peau",
+    "status": "main"
+  },
+  {
+    "key": "t_e4c44193611c",
+    "entry_id": "6ba629d5-ed30-4d32-b203-8de2287f32aa",
+    "term": "gestion de la fumée et de la chaleur ",
+    "status": "main"
+  },
+  {
+    "key": "a_e4c44193611c",
+    "entry_id": "6ba629d5-ed30-4d32-b203-8de2287f32aa",
+    "term": "GFC",
+    "status": "main"
+  },
+  {
+    "key": "t_f8af7a560675",
+    "entry_id": "6db2876d-a76f-4654-bbc6-ff5b76d376af",
+    "term": "chemin de fuite",
+    "status": "main"
+  },
+  {
+    "key": "t_bed92c1a63a8",
+    "entry_id": "6ed14859-5c7f-4c82-a8d8-4f7daddd69ee",
+    "term": "éclairage de secours",
+    "status": null
+  },
+  {
+    "key": "t_0e667d4498db",
+    "entry_id": "6f8dce5a-1275-4b72-ad5e-b12dc87350e2",
+    "term": "clapet terminal pare-flammes",
+    "status": "main"
+  },
+  {
+    "key": "t_ddcffdeb50f2",
+    "entry_id": "7249bcb8-d89e-4589-9847-10a840f27fe6",
+    "term": "profondeur totale (bâtiment)",
+    "status": "main"
+  },
+  {
+    "key": "t_47fa80c58c2f",
+    "entry_id": "74731e3a-57b4-4ca4-8585-915ea207d558",
+    "term": "mesure compensatoire",
+    "status": "main"
+  },
+  {
+    "key": "t_11a5159c196e",
+    "entry_id": "7706717f-34ee-4cb9-b14d-d7346a185b06",
+    "term": "durée d’utilisation",
+    "status": "main"
+  },
+  {
+    "key": "t_fd1ad3ee9de5",
+    "entry_id": "7725dc66-4fe3-4a47-90c2-75783bc5c67b",
+    "term": "résistance durable à la chaleur",
+    "status": "main"
+  },
+  {
+    "key": "t_c731c781bb83",
+    "entry_id": "79f11faf-962d-4d4c-8279-855100130bbc",
+    "term": "système de sonorisation électroacoustique",
+    "status": "main"
+  },
+  {
+    "key": "a_c731c781bb83",
+    "entry_id": "79f11faf-962d-4d4c-8279-855100130bbc",
+    "term": "SSE",
+    "status": "main"
+  },
+  {
+    "key": "t_9400ad275194",
+    "entry_id": "7bd92da6-651f-41f4-b4d8-a3b8088880df",
+    "term": "clapet anti-fumée froide",
+    "status": "main"
+  },
+  {
+    "key": "t_73fa8dd24f5b",
+    "entry_id": "7bfebdce-1ab1-4e5b-9711-6de160a5d4f5",
+    "term": "résistance au feu",
+    "status": "main"
+  },
+  {
+    "key": "t_ae99129d5f12",
+    "entry_id": "7f5708a9-d20d-4aaf-9408-d00f016de430",
+    "term": "centrale officielle d’alarme incendie",
+    "status": "main"
+  },
+  {
+    "key": "t_003fedb7c525",
+    "entry_id": "7f7e9a1c-cbfb-4d3a-b3e8-a60ca5395701",
+    "term": "cellule de batterie",
+    "status": "main"
+  },
+  {
+    "key": "t_174753baa4bf",
+    "entry_id": "805d47d8-72e3-46c9-a546-4b607ccbf5e5",
+    "term": "système de détection et d'alarme incendie",
+    "status": "main"
+  },
+  {
+    "key": "a_174753baa4bf",
+    "entry_id": "805d47d8-72e3-46c9-a546-4b607ccbf5e5",
+    "term": "SDAI",
+    "status": "main"
+  },
+  {
+    "key": "t_ed8d2b208c62",
+    "entry_id": "805d47d8-72e3-46c9-a546-4b607ccbf5e5",
+    "term": "installation de détection d'incendie",
+    "status": "variant"
+  },
+  {
+    "key": "t_798e3764ea4a",
+    "entry_id": "837943ed-45df-4ca1-980d-4a9aba3c30e0",
+    "term": "système d'ascenseur",
+    "status": "main"
+  },
+  {
+    "key": "t_a3c7b768a625",
+    "entry_id": "83807806-dcd3-4024-9e43-63273ccfbf03",
+    "term": "extincteur portatif",
+    "status": "main"
+  },
+  {
+    "key": "t_13a23e86d38f",
+    "entry_id": "85728283-40d6-4c18-af5d-022df1243ec7",
+    "term": "Mode Intervention (phase 2)",
+    "status": "main"
+  },
+  {
+    "key": "t_89ee7d6e5b4f",
+    "entry_id": "8677c5ed-729f-4e14-a285-c0af1805b996",
+    "term": "câble",
+    "status": "main"
+  },
+  {
+    "key": "t_364c42305722",
+    "entry_id": "8780a12c-15f1-47df-a686-ec4142cc4a6b",
+    "term": "système",
+    "status": "main"
+  },
+  {
+    "key": "t_c7fe1d3b524d",
+    "entry_id": "88e7654c-6f49-4d68-9cd3-74d30827779b",
+    "term": "système d'extinction à mousse",
+    "status": "main"
+  },
+  {
+    "key": "t_7645402b3cc9",
+    "entry_id": "8986b1f4-40d4-44e5-9122-75e2a75f5172",
+    "term": "ouvrant de soufflage d’air frais",
+    "status": "main"
+  },
+  {
+    "key": "t_aa64a9a2721d",
+    "entry_id": "8b4d98b8-cbbe-4055-af69-67294a978bf1",
+    "term": "table de cuisson",
+    "status": "main"
+  },
+  {
+    "key": "t_462981c33c6f",
+    "entry_id": "8ca1e081-44d9-46c8-9ba0-0618e00b0cd2",
+    "term": "feu",
+    "status": null
+  },
+  {
+    "key": "t_d833128a1199",
+    "entry_id": "8f62f04c-53f3-4b6a-9d1b-dc02dd394598",
+    "term": "conduit non protégé contre les effets de l’incendie",
+    "status": "main"
+  },
+  {
+    "key": "t_4f86bba9cb39",
+    "entry_id": "9222a33f-8554-446b-9efb-40c05d80012a",
+    "term": "signal d'issue de secours",
+    "status": "main"
+  },
+  {
+    "key": "t_16a3b6d4ea78",
+    "entry_id": "932c0c93-4961-482a-9859-63221bdf9d0f",
+    "term": "journal de bord",
+    "status": "main"
+  },
+  {
+    "key": "t_94bbca669570",
+    "entry_id": "94b3b786-fa87-4cea-af2a-fab015af4eee",
+    "term": "installateur",
+    "status": "main"
+  },
+  {
+    "key": "t_11c5d0aaa9cd",
+    "entry_id": "94b3b786-fa87-4cea-af2a-fab015af4eee",
+    "term": "constructeur",
+    "status": "variant"
+  },
+  {
+    "key": "t_4003deb80e26",
+    "entry_id": "94ee1a43-ecbc-435b-876f-32ee2c3e1f0e",
+    "term": "niveau sous terre",
+    "status": "main"
+  },
+  {
+    "key": "t_40b230fcde67",
+    "entry_id": "95389048-745e-4459-8941-2b25b3c5d20c",
+    "term": "charge calorifique mobilière",
+    "status": "main"
+  },
+  {
+    "key": "t_4f4ac07f16df",
+    "entry_id": "97561ce5-2123-4d5f-b369-a13b9f12cb92",
+    "term": "produit de construction",
+    "status": null
+  },
+  {
+    "key": "t_b57c8fb26769",
+    "entry_id": "9a22f74d-9d6f-4509-99ef-fcfbea4b2c79",
+    "term": "caisson de traitement d'air",
+    "status": "main"
+  },
+  {
+    "key": "t_95cb5a23832f",
+    "entry_id": "9c8b3442-7339-4072-bc9b-031981a998ce",
+    "term": "conduit protégé contre les effets de l’incendie",
+    "status": "main"
+  },
+  {
+    "key": "t_cf90813df32d",
+    "entry_id": "9d7f2654-b6d7-4554-8dad-ffc55ae88390",
+    "term": "aptitude au fonctionnement en cas de panne d’électricité",
+    "status": "main"
+  },
+  {
+    "key": "t_2dd565683d62",
+    "entry_id": "9dc860a2-d415-446f-8159-df0704ccdfb3",
+    "term": "ouverture d'amenée d'air",
+    "status": "main"
+  },
+  {
+    "key": "t_c6d199fe2c20",
+    "entry_id": "9e616e9a-df22-4d1c-8a5c-9e5a1c38bf0c",
+    "term": "installation de transport",
+    "status": "main"
+  },
+  {
+    "key": "t_fb79b4afcaeb",
+    "entry_id": "a8767a84-70ad-4895-adc0-3f84af993c06",
+    "term": "zone d’évacuation",
+    "status": "main"
+  },
+  {
+    "key": "t_f810d4aba4d2",
+    "entry_id": "a8c80bc0-fa7a-4bcf-9e09-b9b8c8f6f4d8",
+    "term": "local de machines",
+    "status": "main"
+  },
+  {
+    "key": "t_c96a32897d1f",
+    "entry_id": "ab95fe7b-9a25-415f-83d9-c124c6dff0cc",
+    "term": "hauteur totale",
+    "status": "main"
+  },
+  {
+    "key": "t_631e8131c585",
+    "entry_id": "ac1f261d-2604-41ca-8d57-503d5ed595d6",
+    "term": "système externe de protection contre la foudre",
+    "status": "main"
+  },
+  {
+    "key": "t_3088d2f52550",
+    "entry_id": "ae63f3af-41a7-4c36-b743-37d4709e6e54",
+    "term": "manipulation de matières dangereuses",
+    "status": "main"
+  },
+  {
+    "key": "t_5cb945c8b088",
+    "entry_id": "af5add95-1a99-47ca-92be-bbf638ae7122",
+    "term": "aptitude au fonctionnement en cas d’incendie",
+    "status": null
+  },
+  {
+    "key": "t_85b20882ef12",
+    "entry_id": "b09b7032-e2ab-451d-9930-bab1c7a5400a",
+    "term": "voie d'évacuation verticale",
+    "status": "main"
+  },
+  {
+    "key": "t_3f2167109aac",
+    "entry_id": "b1fb090b-cdd7-430f-9139-f1c264be9b36",
+    "term": "mise hors service",
+    "status": "main"
+  },
+  {
+    "key": "t_7a0db255e84a",
+    "entry_id": "b3109249-ea85-49c2-809a-874a22170ef6",
+    "term": "système d’appauvrissement en oxygène",
+    "status": "main"
+  },
+  {
+    "key": "t_a58ecd094e9b",
+    "entry_id": "b47115b2-a97d-4c12-a1c6-02482c5ce598",
+    "term": "charge calorifique immobilière",
+    "status": "main"
+  },
+  {
+    "key": "t_f0a914d9cdc9",
+    "entry_id": "b7f8c5a1-aa6e-4d1f-bbd0-c8d6c8f77f0a",
+    "term": "temps disponible pour l’évacuation en sécurité",
+    "status": "main"
+  },
+  {
+    "key": "a_f0a914d9cdc9",
+    "entry_id": "b7f8c5a1-aa6e-4d1f-bbd0-c8d6c8f77f0a",
+    "term": "ASET",
+    "status": "main"
+  },
+  {
+    "key": "t_330592ddf284",
+    "entry_id": "b7f8c5a1-aa6e-4d1f-bbd0-c8d6c8f77f0a",
+    "term": "temps disponible pour évacuer",
+    "status": "variant"
+  },
+  {
+    "key": "a_330592ddf284",
+    "entry_id": "b7f8c5a1-aa6e-4d1f-bbd0-c8d6c8f77f0a",
+    "term": "ASET",
+    "status": "variant"
+  },
+  {
+    "key": "t_a30d8b2ddce0",
+    "entry_id": "b9406852-5aad-4bb2-b63a-7eb1cb8108b6",
+    "term": "paroi extérieure",
+    "status": "main"
+  },
+  {
+    "key": "t_7e04f39da409",
+    "entry_id": "bbcf9c4d-b2eb-4d2e-8d11-53a593d116c1",
+    "term": "temps de commutation",
+    "status": "main"
+  },
+  {
+    "key": "t_9aff29ba1363",
+    "entry_id": "bef8d5ab-b8f3-495c-9103-73595912233e",
+    "term": "remise en état",
+    "status": "main"
+  },
+  {
+    "key": "t_6d3d1c37cd15",
+    "entry_id": "c0153324-f1b9-4055-9076-84ba30d6b88a",
+    "term": "actions immédiates",
+    "status": "main"
+  },
+  {
+    "key": "t_0cfa2b65efd4",
+    "entry_id": "c020e8cd-a468-4295-9e7f-d69c6dae7204",
+    "term": "danger",
+    "status": "main"
+  },
+  {
+    "key": "t_4d7b1e3f3011",
+    "entry_id": "c0408533-d371-4e0b-8c5e-e003477d03ca",
+    "term": "air ambiant",
+    "status": "main"
+  },
+  {
+    "key": "t_c400a7e47e51",
+    "entry_id": "c0408533-d371-4e0b-8c5e-e003477d03ca",
+    "term": "air intérieur",
+    "status": "variant"
+  },
+  {
+    "key": "t_c512341196f2",
+    "entry_id": "c0449ea5-e47f-426c-816e-7055d03933bf",
+    "term": "système interne de protection contre la foudre",
+    "status": null
+  },
+  {
+    "key": "t_3d2cd1a7c08a",
+    "entry_id": "c0c2ebf7-1e36-44de-9b3b-0cb5e465e12b",
+    "term": "capacité portante",
+    "status": null
+  },
+  {
+    "key": "t_e8fcf76d9768",
+    "entry_id": "c1c02dec-c16e-4bbd-82a2-2d766aed4bc0",
+    "term": "secteur d'alarme",
+    "status": "main"
+  },
+  {
+    "key": "t_d23ae7bfc2e8",
+    "entry_id": "c24049a6-8a96-41c2-82a9-c127ddba1ea6",
+    "term": "module de batterie",
+    "status": "main"
+  },
+  {
+    "key": "t_ddb75d184878",
+    "entry_id": "c3657c11-8480-4973-995e-0517257d3464",
+    "term": "déroulement d'un incendie",
+    "status": "main"
+  },
+  {
+    "key": "t_d66d925cd78c",
+    "entry_id": "c3ddff3a-6962-4bc0-93a2-90b74f7770ba",
+    "term": "désenfumage en cours d’intervention au moyen de ventilateurs",
+    "status": "main"
+  },
+  {
+    "key": "t_a42add0582b4",
+    "entry_id": "c583c421-90d3-4f22-b449-197f178f1cce",
+    "term": "installation étrangère",
+    "status": "main"
+  },
+  {
+    "key": "t_a662333f2eee",
+    "entry_id": "c6a1623c-75cc-4906-81af-bd9eea01f9a5",
+    "term": "installation mécanique d'extraction de fumée et de chaleur",
+    "status": "main"
+  },
+  {
+    "key": "a_a662333f2eee",
+    "entry_id": "c6a1623c-75cc-4906-81af-bd9eea01f9a5",
+    "term": "IMEFC",
+    "status": "main"
+  },
+  {
+    "key": "t_b9ea9a0713a7",
+    "entry_id": "c6d3c625-93d9-47fc-bc5c-2da873022cd1",
+    "term": "toit",
+    "status": "main"
+  },
+  {
+    "key": "t_79f768f2b2e1",
+    "entry_id": "c6e90fd7-8ea8-4896-ae98-0b2539ddc544",
+    "term": "méthode de preuve",
+    "status": "main"
+  },
+  {
+    "key": "t_99fb9588491f",
+    "entry_id": "c83c783a-6a1d-4869-9f49-7a47a5ad1725",
+    "term": "dérangement",
+    "status": "main"
+  },
+  {
+    "key": "t_021389b274ae",
+    "entry_id": "c9587418-00af-45c7-94c9-ffbf09f73046",
+    "term": "alimentation normale",
+    "status": "main"
+  },
+  {
+    "key": "t_fcd88af41262",
+    "entry_id": "ca656bb6-5918-4957-99a2-6c09b2f9f900",
+    "term": "ouvrant de désenfumage",
+    "status": "main"
+  },
+  {
+    "key": "t_37586825871f",
+    "entry_id": "cbd2bf94-a5f1-43c8-ae87-8d1fd5217676",
+    "term": "gaine de l'installation de transport",
+    "status": "main"
+  },
+  {
+    "key": "t_b1f2726ff361",
+    "entry_id": "cd502c27-f194-4ece-9da8-3705d0a89368",
+    "term": "air pulsé",
+    "status": "main"
+  },
+  {
+    "key": "t_2497c73b4128",
+    "entry_id": "cd502c27-f194-4ece-9da8-3705d0a89368",
+    "term": "air fourni",
+    "status": "variant"
+  },
+  {
+    "key": "t_0409321b2e2a",
+    "entry_id": "cdde3c79-0f94-4fa0-9990-b313514e17b7",
+    "term": "hauteur de passage du local",
+    "status": "main"
+  },
+  {
+    "key": "t_157f3b2d54c4",
+    "entry_id": "d0335a29-9b6e-4947-8fe0-6c2f057553ed",
+    "term": "générateur d’aérosol",
+    "status": "main"
+  },
+  {
+    "key": "t_68cc74cac4a9",
+    "entry_id": "d0335a29-9b6e-4947-8fe0-6c2f057553ed",
+    "term": "bombe aérosol",
+    "status": "variant"
+  },
+  {
+    "key": "t_bed442cf459f",
+    "entry_id": "d1858e62-5a6f-4a17-83cc-822edd00de2c",
+    "term": "incendie",
+    "status": null
+  },
+  {
+    "key": "t_ed942bdaf3d0",
+    "entry_id": "d2b4cf84-3854-4c9f-bbe3-e75bf61c8882",
+    "term": "gaine technique",
+    "status": "main"
+  },
+  {
+    "key": "t_260c80b44d4f",
+    "entry_id": "d2b4cf84-3854-4c9f-bbe3-e75bf61c8882",
+    "term": "gaine pour installation technique",
+    "status": "variant"
+  },
+  {
+    "key": "t_44c09d05b2d8",
+    "entry_id": "d3c9777b-af2f-4463-ae9f-82efa90da2db",
+    "term": "fermeture coupe-feu",
+    "status": "main"
+  },
+  {
+    "key": "t_02c972001bc5",
+    "entry_id": "d5fdab26-96f1-4727-af46-26f341f515bc",
+    "term": "conduit de raccordement",
+    "status": "main"
+  },
+  {
+    "key": "t_41c6a1be5e02",
+    "entry_id": "d7624bbe-c837-4532-ba39-100046502f10",
+    "term": "installation",
+    "status": "main"
+  },
+  {
+    "key": "t_700f51d07e93",
+    "entry_id": "d80e43c9-02db-419d-9378-b0a6b4e7dcc2",
+    "term": "partie de bâtiment",
+    "status": "main"
+  },
+  {
+    "key": "t_6a5b8d57f274",
+    "entry_id": "d81f7056-becc-4b1e-9491-37b7329636ae",
+    "term": "preuve",
+    "status": "main"
+  },
+  {
+    "key": "t_44a09412b20f",
+    "entry_id": "d903093a-119d-4f25-a95f-03506ac7638a",
+    "term": "conduit de fumée",
+    "status": "main"
+  },
+  {
+    "key": "t_71814f124dbb",
+    "entry_id": "dbbea43d-cb42-4096-b2d6-58f8a49d17ed",
+    "term": "récipient cryogénique",
+    "status": "main"
+  },
+  {
+    "key": "t_24b8975ba100",
+    "entry_id": "e05e2180-ee5a-4951-8126-486b560298e6",
+    "term": "coût sans lien direct avec la protection incendie",
+    "status": "main"
+  },
+  {
+    "key": "t_31ec315b914b",
+    "entry_id": "e1e3155e-d324-4fe7-b292-ab35a21863b6",
+    "term": "biais",
+    "status": "main"
+  },
+  {
+    "key": "t_2f55de8ece4e",
+    "entry_id": "e2b23a1c-7639-438c-8dca-a3048bb540f4",
+    "term": "élément coupe-feu",
+    "status": "main"
+  },
+  {
+    "key": "t_b94be6ba6ace",
+    "entry_id": "e76ce06e-98a7-4356-8a1e-328ac0f99018",
+    "term": "plan d’orientation pour la reconnaissance et l’intervention des sapeurs-pompiers",
+    "status": "main"
+  },
+  {
+    "key": "t_6b6bd5e46f6d",
+    "entry_id": "e8662cdf-a0ba-48cd-a319-36daaf3cc975",
+    "term": "conduit",
+    "status": "main"
+  },
+  {
+    "key": "t_b5e60a01316b",
+    "entry_id": "edc39d14-a5d9-461f-86e7-d7735a2a5537",
+    "term": "signal d'interdiction",
+    "status": null
+  },
+  {
+    "key": "t_b27736ec9d05",
+    "entry_id": "edcd814a-163d-4192-a95e-6cb978690386",
+    "term": "produit",
+    "status": "main"
+  },
+  {
+    "key": "t_f2c97ab298fc",
+    "entry_id": "ee2a2828-d45d-4f9b-8b79-4d9617f0f50c",
+    "term": "sécurité intégrée",
+    "status": "main"
+  },
+  {
+    "key": "t_aa0386193622",
+    "entry_id": "ef277369-be11-454c-8acc-b3ce38e19d50",
+    "term": "danger d’activation",
+    "status": "main"
+  },
+  {
+    "key": "t_799f756b7779",
+    "entry_id": "f251b1d1-9a97-4eb2-b510-5bc4d0195f4a",
+    "term": "structure porteuse",
+    "status": null
+  },
+  {
+    "key": "t_c2a538d611cd",
+    "entry_id": "f4d98eff-da32-47c1-b079-c6d1b78c8ac6",
+    "term": "air recyclé",
+    "status": "main"
+  },
+  {
+    "key": "t_2b3d03e0dcf0",
+    "entry_id": "f93dd916-935b-4d66-9ba5-9249db1785ec",
+    "term": "clapet coupe-feu",
+    "status": "main"
+  },
+  {
+    "key": "a_2b3d03e0dcf0",
+    "entry_id": "f93dd916-935b-4d66-9ba5-9249db1785ec",
+    "term": "CCF",
+    "status": "main"
+  },
+  {
+    "key": "t_fe6a90390ac3",
+    "entry_id": "f9597c5e-7c85-4bde-9a46-4e1322a11a56",
+    "term": "risque",
+    "status": "main"
+  },
+  {
+    "key": "t_542430569baa",
+    "entry_id": "fd5837b1-c519-407b-ad6b-32850f6e2f37",
+    "term": "feu utilitaire",
+    "status": "main"
+  },
+  {
+    "key": "t_610149b4a11c",
+    "entry_id": "ff1ba707-f90c-4150-b60f-0f8719c719fd",
+    "term": "cuisine",
+    "status": "main"
+  },
+  {
+    "key": "t_6fa428500722",
+    "entry_id": "ff3e32ed-81d6-4c98-bd7c-281d81e55a9d",
+    "term": "entretien",
+    "status": "main"
+  },
+  {
+    "key": "t_6b04b1cab1e8",
+    "entry_id": "fff149f6-52ff-4e41-b0b0-19b1274e2b3f",
+    "term": "signal d'avertissement",
+    "status": null
+  }
+]

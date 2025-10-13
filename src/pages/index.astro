@@ -3,19 +3,10 @@ import Layout from '../layouts/Layout.astro'
 import { getLocale } from 'astro-i18n-aut'
 import AlpineSearchBox from '@/components/AlpineSearchBox.astro'
 
-import { getTerms } from '@/sanity/sanity'
-import generateTermsList from '@/utils/generateTermsList'
-
-const terms = await getTerms(getLocale(Astro.url))
-
-const list = generateTermsList(terms)
+const locale = getLocale(Astro.url)
 ---
 
 <Layout title="Suche">
-  <h1 class="text-5xl">Terminofeu</h1>
-  <AlpineSearchBox terms={terms} />
-
-  <ul>
-    {list.map((item) => <li>{item.term}</li>)}
-  </ul>
+  <h1 class="text-5xl">Terminofeu {locale}</h1>
+  <AlpineSearchBox />
 </Layout>

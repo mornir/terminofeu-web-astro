@@ -1,4 +1,7 @@
-export default function generateTermsList(entries = []) {
+import fs from 'fs'
+import { getTerms } from './sanity.js'
+
+function generateTermsList(entries = []) {
   return entries
     .flatMap((entry) => {
       if (!entry.terms) {
@@ -26,3 +29,26 @@ export default function generateTermsList(entries = []) {
     })
     .filter((t) => t.status !== 'avoid' && t.status !== 'to_be_defined')
 }
+
+async function main() {
+  console.log('🟡 Fetching content from Sanity...')
+
+  const list = await getTerms()
+
+  const terms = generateTermsList(list)
+
+  fs.writeFileSync(
+    'public/search-data.json',
+    JSON.stringify(terms, null, 2),
+    'utf-8'
+  )
+
+  console.log(
+    `✅ Generated public/search-data.json with ${terms.length} entries`
+  )
+}
+
+main().catch((err) => {
+  console.error('❌ Error generating search-data.json:', err)
+  process.exit(1)
+})

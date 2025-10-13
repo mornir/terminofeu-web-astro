@@ -7,11 +7,13 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "latest": "pnpm update --interactive --latest"
+    "latest": "pnpm update --interactive --latest",
+    "term": "node src/js/generate-search-data.mjs"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.9",
     "@astrojs/sitemap": "^3.6.0",
+    "@iconify-json/icon-park-outline": "^1.2.4",
     "@iconify-json/mdi": "^1.2.3",
     "@sanity/client": "^7.11.2",
     "@tailwindcss/vite": "^4.1.13",

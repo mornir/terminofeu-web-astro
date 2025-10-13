@@ -1,11 +1,5 @@
 ---
 import { Icon } from 'astro-icon/components'
-
-interface Props {
-  terms: []
-}
-
-const { terms = [] } = Astro.props
 ---
 
 <form
@@ -57,7 +51,7 @@ const { terms = [] } = Astro.props
     x-transition:leave-start="opacity-100 transform scale-y-100"
     x-transition:leave-end="opacity-0 transform scale-y-90"
   >
-    <template x-for="(result, index) in searchResults" :key="result.item.id">
+    <template x-for="(result, index) in searchResults" :key="result.item.key">
       <li
         lang="de"
         class="hover:bg-light first-of-type:rounded-t-lg last-of-type:rounded-b-lg relative"
@@ -65,15 +59,15 @@ const { terms = [] } = Astro.props
         :id="`search-item-${index}`"
       >
         <a
-          :href="'/fiches/' + result.item.slug"
-          x-text="result.item.vedette"
+          :href="'/fiches/' + result.item.entry_id"
+          x-text="result.item.term"
           class="text-lg py-2 px-8 block"></a>
 
-        <!--      <Icon
+        <Icon
           name="icon-park-outline:enter-key"
           class="text-4xl text-white pl-4 absolute pointer-events-none right-5 top-1 hidden xl:inline"
           x-show="index == selectedIndex"
-        /> -->
+        />
       </li>
     </template>
   </ul>
@@ -87,47 +81,3 @@ const { terms = [] } = Astro.props
     </p>
   </div>
 </form>
-
-<script define:vars={{ terms }}>
-  console.log(terms)
-
-  import Alpine from 'alpinejs'
-  import Fuse from 'fuse.js'
-
-  const fuseOptions = {
-    keys: ['term'],
-    ignoreLocation: true,
-    threshold: 0.1,
-  }
-  const fuse = new Fuse(terms, fuseOptions)
-
-  document.addEventListener('alpine:init', () => {
-    Alpine.data('search', () => ({
-      searchPattern: '',
-      showBox: false,
-      selectedIndex: 0,
-      moveUpList() {
-        this.selectedIndex > 0
-          ? this.selectedIndex--
-          : (this.selectedIndex = this.searchResults.length - 1)
-      },
-      moveDownList() {
-        this.selectedIndex < this.searchResults.length - 1
-          ? this.selectedIndex++
-          : (this.selectedIndex = 0)
-      },
-      goToFiche() {
-        if (this.searchResults.length) {
-          window.location.href = `/fiches/${
-            this.searchResults[this.selectedIndex].item.slug
-          }/`
-        }
-      },
-      get searchResults() {
-        if (!this.searchPattern) return []
-        this.showBox = true
-        return fuse.search(this.searchPattern.trim()).slice(0, 7)
-      },
-    }))
-  })
-</script>

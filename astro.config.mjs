@@ -26,7 +26,7 @@ export default defineConfig({
     format: 'directory',
   },
   integrations: [
-    alpinejs(),
+    alpinejs({ entrypoint: '/src/js/alpine' }),
     icon(),
     i18n({
       locales,
