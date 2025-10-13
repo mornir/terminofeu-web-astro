@@ -53,7 +53,6 @@ import { Icon } from 'astro-icon/components'
   >
     <template x-for="(result, index) in searchResults" :key="result.item.key">
       <li
-        lang="de"
         class="hover:bg-light first-of-type:rounded-t-lg last-of-type:rounded-b-lg relative"
         :class="{'bg-accent hover:bg-accent': index == selectedIndex }"
         :id="`search-item-${index}`"

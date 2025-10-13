@@ -1,11 +1,5 @@
 import Fuse from 'fuse.js'
 
-/* const response = await fetch('/search-data.json')
-
-if (!response.ok) throw new Error('Cannot get terms list' + response.statusText)
-
-const list = await response.json() */
-
 import list from '../terms-list.json'
 
 const fuseOptions = {
