@@ -1,19 +1,21 @@
 import fs from 'fs'
 import { getTerms } from './sanity.js'
 
-function generateTermsList(entries = []) {
+function generateTermsList(entries = [], lang) {
+  const property = 'terms_' + lang
   return entries
     .flatMap((entry) => {
-      if (!entry.terms) {
+      if (!entry[property]) {
         return []
       }
-      return entry.terms.flatMap((term) => {
+      return entry[property].flatMap((term) => {
         const designations = [
           {
             key: 't_' + term._key,
             entry_id: entry._id,
             term: term.designation,
             status: term.status,
+            lang,
           },
         ]
         if (term.abbreviation) {
@@ -22,6 +24,7 @@ function generateTermsList(entries = []) {
             entry_id: entry._id,
             term: term.abbreviation,
             status: term.status,
+            lang,
           })
         }
         return designations
@@ -33,9 +36,13 @@ function generateTermsList(entries = []) {
 async function main() {
   console.log('🟡 Fetching content from Sanity...')
 
-  const list = await getTerms('fr')
+  const entries = await getTerms()
 
-  const terms = generateTermsList(list)
+  const terms_de = generateTermsList(entries, 'de')
+  const terms_fr = generateTermsList(entries, 'fr')
+  const terms_it = generateTermsList(entries, 'it')
+
+  const terms = [...terms_de, ...terms_fr, ...terms_it]
 
   fs.writeFileSync(
     'src/terms-list.json',
