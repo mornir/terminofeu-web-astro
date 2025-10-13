@@ -33,7 +33,7 @@ function generateTermsList(entries = []) {
 async function main() {
   console.log('🟡 Fetching content from Sanity...')
 
-  const list = await getTerms()
+  const list = await getTerms('fr')
 
   const terms = generateTermsList(list)
 
