@@ -15,7 +15,7 @@ export default (Alpine) => {
     searchPattern: '',
     showBox: false,
     selectedIndex: 0,
-    langs: ['de', 'fr'],
+    langs: [],
     moveUpList() {
       this.selectedIndex > 0
         ? this.selectedIndex--
@@ -33,7 +33,10 @@ export default (Alpine) => {
         }/`
       }
     },
-    get languages() {
+    checkLangs(event) {
+      console.log('hello')
+    },
+    get searchLangs() {
       return this.langs.map((lang) => ({ lang: lang }))
     },
     get searchResults() {
@@ -41,7 +44,10 @@ export default (Alpine) => {
       this.showBox = true
       return fuse.search(
         {
-          $and: [{ term: this.searchPattern.trim() }, { $or: this.languages }],
+          $and: [
+            { term: this.searchPattern.trim() },
+            { $or: this.searchLangs },
+          ],
         },
         { limit: 7 }
       )

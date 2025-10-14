@@ -89,7 +89,7 @@ import { languages } from '@/i18n/config'
             type="checkbox"
             id={'lang-' + code}
             value={code}
-            x-model="langs"
+            @change="$event.target.checked ? langs.push($event.target.value) : langs = langs.filter(lang => lang !== $event.target.value)"
           />
           <label for={'lang-' + code}>{name}</label>
         </div>
