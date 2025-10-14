@@ -15,7 +15,6 @@ export default (Alpine) => {
     searchPattern: '',
     showBox: false,
     selectedIndex: 0,
-    languages: [{ lang: 'de' }, { lang: 'fr' }],
     langs: ['de', 'fr'],
     moveUpList() {
       this.selectedIndex > 0
@@ -33,6 +32,9 @@ export default (Alpine) => {
           this.searchResults[this.selectedIndex].item.slug
         }/`
       }
+    },
+    get languages() {
+      return this.langs.map((lang) => ({ lang: lang }))
     },
     get searchResults() {
       if (!this.searchPattern) return []

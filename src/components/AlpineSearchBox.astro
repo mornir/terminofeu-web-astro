@@ -87,11 +87,11 @@ import { languages } from '@/i18n/config'
         <div>
           <input
             type="checkbox"
-            id={'lang' + code}
+            id={'lang-' + code}
             value={code}
             x-model="langs"
           />
-          <label for={'lang' + code}>{name}</label>
+          <label for={'lang-' + code}>{name}</label>
         </div>
       ))
     }
