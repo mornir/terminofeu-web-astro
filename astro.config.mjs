@@ -11,12 +11,7 @@ import icon from 'astro-icon'
 
 import sitemap from '@astrojs/sitemap'
 
-const defaultLocale = 'de'
-const locales = {
-  de: 'de-CH', // the `defaultLocale` value must present in `locales` keys
-  fr: 'fr-CH',
-  it: 'it-CH',
-}
+import { defaultLocale, locales } from './src/i18n/config.ts'
 
 // https://astro.build/config
 export default defineConfig({

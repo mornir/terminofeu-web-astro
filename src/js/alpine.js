@@ -16,6 +16,7 @@ export default (Alpine) => {
     showBox: false,
     selectedIndex: 0,
     languages: [{ lang: 'de' }, { lang: 'fr' }],
+    langs: ['de', 'fr'],
     moveUpList() {
       this.selectedIndex > 0
         ? this.selectedIndex--

@@ -1,5 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components'
+
+import { languages } from '@/i18n/config'
 ---
 
 <form
@@ -78,5 +80,20 @@ import { Icon } from 'astro-icon/components'
     >
       Aucun résultat pour <b x-text="searchPattern"></b>
     </p>
+  </div>
+  <div>
+    {
+      languages.map(({ name, code }) => (
+        <div>
+          <input
+            type="checkbox"
+            id={'lang' + code}
+            value={code}
+            x-model="langs"
+          />
+          <label for={'lang' + code}>{name}</label>
+        </div>
+      ))
+    }
   </div>
 </form>
