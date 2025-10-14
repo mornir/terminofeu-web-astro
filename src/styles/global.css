@@ -4,3 +4,7 @@
   --color-primary: oklch(27.9% 0.041 260.031);
   --color-accent: oklch(43.8% 0.218 303.724);
 }
+
+[x-cloak] {
+  display: none !important;
+}
