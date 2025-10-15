@@ -1,4 +1,5 @@
 ---
+import Layout from '@/layouts/Layout.astro'
 import fiches from '@/terms-list.json'
 import { getFiche } from '@/js/sanity'
 
@@ -10,10 +11,10 @@ export function getStaticPaths() {
 
 const { props } = Astro
 
-const fiche = getFiche(props.entry_id)
+const fiche = await getFiche(props.entry_id)
 ---
 
-<div>
+<Layout title="Fiche">
   <h1>FICHE</h1>
-  {fiche}
-</div>
+  {fiche.deTitle}
+</Layout>
