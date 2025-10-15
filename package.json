@@ -13,8 +13,7 @@
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.9",
     "@astrojs/sitemap": "^3.6.0",
-    "@iconify-json/icon-park-outline": "^1.2.4",
-    "@iconify-json/mdi": "^1.2.3",
+    "@lucide/astro": "^0.545.0",
     "@sanity/client": "^7.11.2",
     "@sindresorhus/slugify": "^3.0.0",
     "@tailwindcss/vite": "^4.1.13",
@@ -22,7 +21,6 @@
     "alpinejs": "^3.15.0",
     "astro": "^5.13.10",
     "astro-i18n-aut": "^0.7.3",
-    "astro-icon": "^1.1.5",
     "astro-portabletext": "^0.11.3",
     "fuse.js": "^7.1.0",
     "groq": "^4.10.0",

@@ -1,6 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro'
 import AlpineSearchBox from '@/components/AlpineSearchBox.astro'
+import TermLanguageCard from '@/components/TermLanguageCard.astro'
 import fiches from '@/terms-list.json'
 import { getFiche } from '@/js/sanity'
 
@@ -19,4 +20,6 @@ const fiche = await getFiche(props.entry_id)
   <AlpineSearchBox />
 
   <h1 class="text-5xl">FICHE {fiche.deTitle}</h1>
+
+  <TermLanguageCard content={fiche.content.de} lang="de" />
 </Layout>

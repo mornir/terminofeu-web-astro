@@ -2,7 +2,7 @@ export const languages = [
   { name: 'Deutsch', code: 'de', flag: '🇩🇪' },
   { name: 'français', code: 'fr', flag: '🇫🇷' },
   { name: 'italiano', code: 'it', flag: '🇮🇹' },
-]
+] as const
 
 export const defaultLocale = 'de'
 
