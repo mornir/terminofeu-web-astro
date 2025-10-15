@@ -82,18 +82,17 @@ import { languages } from '@/i18n/config'
     </p>
   </div>
   <div>
-    {
-      languages.map(({ name, code }) => (
-        <div>
-          <input
-            type="checkbox"
-            id={'lang-' + code}
-            value={code}
-            @change="$event.target.checked ? langs.push($event.target.value) : langs = langs.filter(lang => lang !== $event.target.value)"
-          />
-          <label for={'lang-' + code}>{name}</label>
-        </div>
-      ))
-    }
+    <template x-for="lang in languages">
+      <div>
+        <input
+          type="checkbox"
+          :id="'lang-' + lang.code"
+          :value="lang.code"
+          x-model="selectedLangs"
+          @change="if (selectedLangs.length === 0) selectedLangs = [lang.code]"
+        />
+        <label :for="'lang-' + lang.code" x-text="lang.name"></label>
+      </div>
+    </template>
   </div>
 </form>

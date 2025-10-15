@@ -1,6 +1,7 @@
 import Fuse from 'fuse.js'
 
 import list from '../terms-list.json'
+import { languages } from '@/i18n/config'
 
 const fuseOptions = {
   keys: ['term', 'lang'],
@@ -15,7 +16,8 @@ export default (Alpine) => {
     searchPattern: '',
     showBox: false,
     selectedIndex: 0,
-    langs: [],
+    selectedLangs: ['de', 'fr'],
+    languages: languages,
     moveUpList() {
       this.selectedIndex > 0
         ? this.selectedIndex--
@@ -33,11 +35,8 @@ export default (Alpine) => {
         }/`
       }
     },
-    checkLangs(event) {
-      console.log('hello')
-    },
     get searchLangs() {
-      return this.langs.map((lang) => ({ lang: lang }))
+      return this.selectedLangs.map((lang) => ({ lang: lang }))
     },
     get searchResults() {
       if (!this.searchPattern) return []
