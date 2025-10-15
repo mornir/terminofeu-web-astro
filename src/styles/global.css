@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-primary: oklch(27.9% 0.041 260.031);
-  --color-accent: oklch(43.8% 0.218 303.724);
+  --color-primary: #1a0e74;
+  --color-accent: #c1295d;
 }
 
 [x-cloak] {
