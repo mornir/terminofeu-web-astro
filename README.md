@@ -2,6 +2,8 @@
 
 Source code for terminofeu.ch
 
+Designed with Figma Make: https://power-wad-48224882.figma.site/
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
