@@ -1,5 +1,8 @@
 import fs from 'fs'
 import { getTerms } from './sanity.js'
+import { slugifyWithCounter } from '@sindresorhus/slugify'
+
+const slugify = slugifyWithCounter()
 
 function generateTermsList(entries = [], lang) {
   const property = 'terms_' + lang
@@ -42,7 +45,10 @@ async function main() {
   const terms_fr = generateTermsList(entries, 'fr')
   const terms_it = generateTermsList(entries, 'it')
 
-  const terms = [...terms_de, ...terms_fr, ...terms_it]
+  const terms = [...terms_de, ...terms_fr, ...terms_it].map((t) => ({
+    slug: slugify(t.term),
+    ...t,
+  }))
 
   fs.writeFileSync(
     'src/terms-list.json',

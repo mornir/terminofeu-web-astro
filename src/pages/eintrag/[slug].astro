@@ -1,0 +1,19 @@
+---
+import fiches from '@/terms-list.json'
+import { getFiche } from '@/js/sanity'
+
+export function getStaticPaths() {
+  return fiches.map((fiche) => {
+    return { params: { slug: fiche.slug }, props: { entry_id: fiche.entry_id } }
+  })
+}
+
+const { props } = Astro
+
+const fiche = getFiche(props.entry_id)
+---
+
+<div>
+  <h1>FICHE</h1>
+  {fiche}
+</div>

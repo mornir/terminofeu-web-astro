@@ -60,7 +60,7 @@ import { languages } from '@/i18n/config'
         :id="`search-item-${index}`"
       >
         <a
-          :href="'/fiches/' + result.item.entry_id"
+          :href="`/eintrag/${result.item.slug}/`"
           x-text="result.item.term"
           class="text-lg py-2 px-8 block"></a>
 

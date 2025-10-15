@@ -33,3 +33,9 @@ export async function getTerms() {
     }
     `)
 }
+
+export async function getFiche(entry_id) {
+  return client.fetch(groq`*[_type == "entry" && _id == $id][0]`, {
+    id: entry_id,
+  })
+}

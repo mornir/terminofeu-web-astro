@@ -16,6 +16,7 @@
     "@iconify-json/icon-park-outline": "^1.2.4",
     "@iconify-json/mdi": "^1.2.3",
     "@sanity/client": "^7.11.2",
+    "@sindresorhus/slugify": "^3.0.0",
     "@tailwindcss/vite": "^4.1.13",
     "@types/alpinejs": "^3.13.11",
     "alpinejs": "^3.15.0",
