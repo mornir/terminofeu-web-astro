@@ -5,6 +5,8 @@ import TermLanguageCard from '@/components/TermLanguageCard.astro'
 import fiches from '@/terms-list.json'
 import { getFiche } from '@/js/sanity'
 
+import { languages } from '@/i18n/config'
+
 export function getStaticPaths() {
   return fiches.map((fiche) => {
     return { params: { slug: fiche.slug }, props: { entry_id: fiche.entry_id } }
@@ -14,12 +16,27 @@ export function getStaticPaths() {
 const { props } = Astro
 
 const fiche = await getFiche(props.entry_id)
+
+const selectedLanguages = ['de']
 ---
 
 <Layout title="Fiche">
   <AlpineSearchBox />
 
   <h1 class="text-5xl">FICHE {fiche.deTitle}</h1>
-
-  <TermLanguageCard content={fiche.content.de} lang="de" />
+  <div
+    class={`grid grid-cols-1 gap-6 ${
+      selectedLanguages.length === 1
+        ? 'lg:grid-cols-1 max-w-2xl mx-auto'
+        : selectedLanguages.length === 2
+          ? 'lg:grid-cols-2'
+          : 'lg:grid-cols-3'
+    }`}
+  >
+  </div>
+  {
+    languages.map((lang) => (
+      <TermLanguageCard content={fiche.content[lang.code]} language={lang} />
+    ))
+  }
 </Layout>
