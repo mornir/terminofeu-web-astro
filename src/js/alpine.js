@@ -12,11 +12,12 @@ const fuseOptions = {
 const fuse = new Fuse(list, fuseOptions)
 
 export default (Alpine) => {
+  Alpine.store('langs', ['de', 'fr'])
+
   Alpine.data('search', () => ({
     searchPattern: '',
     showBox: false,
     selectedIndex: 0,
-    selectedLangs: ['de', 'fr'],
     languages: languages,
     moveUpList() {
       this.selectedIndex > 0
@@ -36,7 +37,7 @@ export default (Alpine) => {
       }
     },
     get searchLangs() {
-      return this.selectedLangs.map((lang) => ({ lang: lang }))
+      return this.$store.langs.map((lang) => ({ lang: lang }))
     },
     get searchResults() {
       if (!this.searchPattern) return []

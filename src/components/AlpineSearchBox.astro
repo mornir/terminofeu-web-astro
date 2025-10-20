@@ -82,8 +82,8 @@ import { Search, CornerDownLeft } from '@lucide/astro'
           type="checkbox"
           :id="'lang-' + lang.code"
           :value="lang.code"
-          x-model="selectedLangs"
-          @change="if (selectedLangs.length === 0) selectedLangs = [lang.code]"
+          x-model="$store.langs"
+          @change="if ($store.langs.length === 0) $store.langs = [lang.code]"
         />
         <label :for="'lang-' + lang.code" x-text="lang.name"></label>
       </div>

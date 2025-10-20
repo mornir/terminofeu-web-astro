@@ -34,9 +34,12 @@ const selectedLanguages = ['de']
     }`}
   >
   </div>
+
+  <div></div>
+
   {
     languages.map((lang) => (
-      <TermLanguageCard content={fiche.content[lang.code]} language={lang} />
+      <TermLanguageCard content={fiche.content[lang.code]} lang={lang.code} />
     ))
   }
 </Layout>
