@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@alpinejs/persist':
+        specifier: ^3.15.0
+        version: 3.15.0
       '@astrojs/alpinejs':
         specifier: ^0.4.9
         version: 0.4.9(@types/alpinejs@3.13.11)(alpinejs@3.15.0)
@@ -52,6 +55,9 @@ importers:
         version: 4.1.13
 
 packages:
+
+  '@alpinejs/persist@3.15.0':
+    resolution: {integrity: sha512-SmW1DWn9FRflfPqZZtpTq+2uXDq/ohbSiKmYg6HXX1UxQnsaSkTT0HT72SQcbqOC3WmIUF28CberBnwiWoqmpw==}
 
   '@astrojs/alpinejs@0.4.9':
     resolution: {integrity: sha512-fvKBAugn7yIngEKfdk6vL3ZlcVKtQvFXCZznG28OikGanKN5W+PkRPIdKaW/0gThRU2FyCemgzyHgyFjsH8dTA==}
@@ -1956,6 +1962,8 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
 snapshots:
+
+  '@alpinejs/persist@3.15.0': {}
 
   '@astrojs/alpinejs@0.4.9(@types/alpinejs@3.13.11)(alpinejs@3.15.0)':
     dependencies:

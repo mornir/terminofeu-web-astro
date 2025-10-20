@@ -13,7 +13,7 @@ const language = languages.find((l) => l.code === lang)!
 ---
 
 <div x-data={`{ code: '${language.code}' }`}>
-  <div :class="!$store.langs.includes(code) && 'hidden'">
+  <div :class="!$store.global.langs.includes(code) && 'hidden'">
     <div class="flex flex-col gap-6 rounded-xl border h-full">
       <div class="pb-4">
         <div class="flex items-center justify-between">

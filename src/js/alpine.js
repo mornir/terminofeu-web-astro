@@ -1,4 +1,5 @@
 import Fuse from 'fuse.js'
+import persist from '@alpinejs/persist'
 
 import list from '../terms-list.json'
 import { languages } from '@/i18n/config'
@@ -12,7 +13,11 @@ const fuseOptions = {
 const fuse = new Fuse(list, fuseOptions)
 
 export default (Alpine) => {
-  Alpine.store('langs', ['de', 'fr'])
+  Alpine.plugin(persist)
+
+  Alpine.store('global', {
+    langs: Alpine.$persist(['de', 'fr']).as('languages_display'),
+  })
 
   Alpine.data('search', () => ({
     searchPattern: '',
@@ -37,7 +42,8 @@ export default (Alpine) => {
       }
     },
     get searchLangs() {
-      return this.$store.langs.map((lang) => ({ lang: lang }))
+      console.log(this.$store.global.langs)
+      return this.$store.global.langs.map((lang) => ({ lang: lang }))
     },
     get searchResults() {
       if (!this.searchPattern) return []
