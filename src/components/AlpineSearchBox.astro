@@ -15,7 +15,7 @@ import { Search, CornerDownLeft } from '@lucide/astro'
     <Search class="w-10 h-10 absolute pointer-events-none text-gray-400 pl-4" />
     <input
       id="search-field"
-      x-model="searchPattern"
+      x-model.debounce="searchPattern"
       x-ref="searchInput"
       type="search"
       enterkeyhint="go"

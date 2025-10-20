@@ -20,6 +20,25 @@ export default (Alpine) => {
   })
 
   Alpine.data('search', () => ({
+    init() {
+      this.$watch('searchPattern', (value) => {
+        if (!value) {
+          this.searchResults = []
+          return
+        }
+        this.showBox = true
+        this.searchResults = fuse.search(
+          {
+            $and: [
+              { term: value.trim() },
+              { $or: this.$store.global.langs.map((lang) => ({ lang })) },
+            ],
+          },
+          { limit: 7 }
+        )
+      })
+    },
+    searchResults: [],
     searchPattern: '',
     showBox: false,
     selectedIndex: 0,
@@ -40,23 +59,6 @@ export default (Alpine) => {
           this.searchResults[this.selectedIndex].item.slug
         }/`
       }
-    },
-    get searchLangs() {
-      console.log(this.$store.global.langs)
-      return this.$store.global.langs.map((lang) => ({ lang: lang }))
-    },
-    get searchResults() {
-      if (!this.searchPattern) return []
-      this.showBox = true
-      return fuse.search(
-        {
-          $and: [
-            { term: this.searchPattern.trim() },
-            { $or: this.searchLangs },
-          ],
-        },
-        { limit: 7 }
-      )
     },
   }))
 }
