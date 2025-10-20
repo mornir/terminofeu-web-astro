@@ -2,13 +2,19 @@
 import Layout from '@/layouts/Layout.astro'
 import { getLocale } from 'astro-i18n-aut'
 import AlpineSearchBox from '@/components/AlpineSearchBox.astro'
+import { Flame } from '@lucide/astro'
 
 const locale = getLocale(Astro.url)
 ---
 
 <Layout title="Suche">
-  <h1 class="text-5xl">Terminofeu {locale}</h1>
-  <AlpineSearchBox />
-
-  <p>Designed with Figma Make: https://power-wad-48224882.figma.site/</p>
+  <div class="grid justify-center items-center h-screen -mt-24">
+    <div>
+      <div class="flex items-center justify-center mb-6">
+        <Flame class="w-12 h-12 text-accent" />
+        <h1 class="text-5xl">Terminofeu</h1>
+      </div>
+      <AlpineSearchBox />
+    </div>
+  </div>
 </Layout>

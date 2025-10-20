@@ -1,4 +1,5 @@
 import Fuse from 'fuse.js'
+import persist from '@alpinejs/persist'
 
 import list from '../terms-list.json'
 import { languages } from '@/i18n/config'
@@ -12,11 +13,35 @@ const fuseOptions = {
 const fuse = new Fuse(list, fuseOptions)
 
 export default (Alpine) => {
+  Alpine.plugin(persist)
+
+  Alpine.store('global', {
+    langs: Alpine.$persist(['de', 'fr']).as('languages_display'),
+  })
+
   Alpine.data('search', () => ({
+    init() {
+      this.$watch('searchPattern', (value) => {
+        if (!value) {
+          this.searchResults = []
+          return
+        }
+        this.showBox = true
+        this.searchResults = fuse.search(
+          {
+            $and: [
+              { term: value.trim() },
+              { $or: this.$store.global.langs.map((lang) => ({ lang })) },
+            ],
+          },
+          { limit: 7 }
+        )
+      })
+    },
+    searchResults: [],
     searchPattern: '',
     showBox: false,
     selectedIndex: 0,
-    selectedLangs: ['de', 'fr'],
     languages: languages,
     moveUpList() {
       this.selectedIndex > 0
@@ -34,22 +59,6 @@ export default (Alpine) => {
           this.searchResults[this.selectedIndex].item.slug
         }/`
       }
-    },
-    get searchLangs() {
-      return this.selectedLangs.map((lang) => ({ lang: lang }))
-    },
-    get searchResults() {
-      if (!this.searchPattern) return []
-      this.showBox = true
-      return fuse.search(
-        {
-          $and: [
-            { term: this.searchPattern.trim() },
-            { $or: this.searchLangs },
-          ],
-        },
-        { limit: 7 }
-      )
     },
   }))
 }

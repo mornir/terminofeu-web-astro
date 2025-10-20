@@ -3,7 +3,6 @@ import { defineConfig } from 'astro/config'
 import alpinejs from '@astrojs/alpinejs'
 import tailwindcss from '@tailwindcss/vite'
 import { i18n, filterSitemapByDefaultLocale } from 'astro-i18n-aut/integration'
-import icon from 'astro-icon'
 import sitemap from '@astrojs/sitemap'
 import { defaultLocale, locales } from './src/i18n/config.ts'
 
@@ -16,7 +15,6 @@ export default defineConfig({
   },
   integrations: [
     alpinejs({ entrypoint: '/src/js/alpine' }),
-    icon(),
     i18n({
       locales,
       defaultLocale,

@@ -1,7 +1,5 @@
 ---
-import { Icon } from 'astro-icon/components'
-
-import { languages } from '@/i18n/config'
+import { Search, CornerDownLeft } from '@lucide/astro'
 ---
 
 <form
@@ -14,13 +12,10 @@ import { languages } from '@/i18n/config'
     <label for="search-field" class="sr-only"
       >Rechercher un terme allemand</label
     >
-    <Icon
-      name="mdi:magnify"
-      class="text-5xl absolute pointer-events-none text-gray-400 pl-4"
-    />
+    <Search class="w-10 h-10 absolute pointer-events-none text-gray-400 pl-4" />
     <input
       id="search-field"
-      x-model="searchPattern"
+      x-model.debounce="searchPattern"
       x-ref="searchInput"
       type="search"
       enterkeyhint="go"
@@ -64,9 +59,8 @@ import { languages } from '@/i18n/config'
           x-text="result.item.term"
           class="text-lg py-2 px-8 block"></a>
 
-        <Icon
-          name="icon-park-outline:enter-key"
-          class="text-4xl text-white pl-4 absolute pointer-events-none right-5 top-1 hidden xl:inline"
+        <CornerDownLeft
+          class="w-10 h-10 text-white pl-4 absolute pointer-events-none right-5 top-1 hidden xl:inline"
           x-show="index == selectedIndex"
         />
       </li>
@@ -88,8 +82,8 @@ import { languages } from '@/i18n/config'
           type="checkbox"
           :id="'lang-' + lang.code"
           :value="lang.code"
-          x-model="selectedLangs"
-          @change="if (selectedLangs.length === 0) selectedLangs = [lang.code]"
+          x-model="$store.global.langs"
+          @change="if ($store.global.langs.length === 0) $store.global.langs = [lang.code]"
         />
         <label :for="'lang-' + lang.code" x-text="lang.name"></label>
       </div>

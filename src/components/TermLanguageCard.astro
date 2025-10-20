@@ -1,0 +1,103 @@
+---
+import { PortableText } from 'astro-portabletext'
+import { languages } from '@/i18n/config'
+
+interface Props {
+  content: any
+  lang: 'de' | 'fr'
+}
+
+const { content, lang } = Astro.props
+
+const language = languages.find((l) => l.code === lang)!
+---
+
+<div x-data={`{ code: '${language.code}' }`}>
+  <div :class="!$store.global.langs.includes(code) && 'hidden'">
+    <div class="flex flex-col gap-6 rounded-xl border h-full max-w-xl">
+      <div class="pb-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">{language.flag}</span>
+            <h3 class="text-xl text-gray-900">{language.name}</h3>
+          </div>
+          <div class="text-xs font-medium">
+            {language.code.toUpperCase()}
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-0 p-6 pt-2">
+        <!-- Designation -->
+        <div class="py-5 border-l-4 border-gray-300 pl-5 bg-gray-50/50">
+          <h4 class="text-xs text-gray-500 uppercase tracking-wide mb-3">
+            Begriff
+          </h4>
+          <p class="text-2xl text-gray-900 leading-tight">
+            {content.terms[0].designation}
+          </p>
+
+          <hr class="my-6" />
+
+          <!-- Definition -->
+          <div class="py-5 pl-5 border-l-4 border-transparent">
+            <h4 class="text-xs text-gray-500 uppercase tracking-wide mb-3">
+              Definition
+            </h4>
+            <div class="text-gray-800 leading-relaxed">
+              <PortableText value={content.definition} />
+            </div>
+          </div>
+
+          <!-- Notes 
+    {
+      content.notes && content.notes.length > 0 && (
+        <>
+          <hr class="my-6" />
+          <div class="py-5 pl-5 border-l-4 border-transparent">
+            <div class="flex items-center gap-2 mb-3">
+              <FileText class="h-4 w-4 text-gray-600" />
+              <h4 class="text-xs text-gray-500 uppercase tracking-wide">
+                Technische Hinweise
+              </h4>
+            </div>
+            <ol class="list-decimal list-outside ml-5 space-y-2.5 text-sm text-gray-700">
+              {content.notes.map((note, index) => (
+                <li key={index} class="leading-relaxed pl-1">
+                  {note}
+                </li>
+              ))}
+            </ol>
+          </div>
+        </>
+      )
+    }-->
+
+          <!-- Examples
+    {
+      content.examples && content.examples.length > 0 && (
+        <>
+          <hr class="my-6" />
+          <div class="py-5 pl-5 border-l-4 border-transparent">
+            <div class="flex items-center gap-2 mb-3">
+              <BookOpen class="h-4 w-4 text-gray-600" />
+              <h4 class="text-xs text-gray-500 uppercase tracking-wide">
+                Beispiele
+              </h4>
+            </div>
+            <ul class="list-disc list-outside ml-5 space-y-2.5 text-sm text-gray-700">
+              {content.examples.map((example, index) => (
+                <li key={index} class="leading-relaxed pl-1">
+                  {example}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </>
+      )
+    } -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
