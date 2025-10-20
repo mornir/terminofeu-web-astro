@@ -23,7 +23,6 @@ const selectedLanguages = ['de']
 <Layout title="Fiche">
   <AlpineSearchBox />
 
-  <h1 class="text-5xl">FICHE {fiche.deTitle}</h1>
   <div
     class={`grid grid-cols-1 gap-6 ${
       selectedLanguages.length === 1
@@ -35,11 +34,11 @@ const selectedLanguages = ['de']
   >
   </div>
 
-  <div></div>
-
-  {
-    languages.map((lang) => (
-      <TermLanguageCard content={fiche.content[lang.code]} lang={lang.code} />
-    ))
-  }
+  <div class="flex gap-6 flex-wrap">
+    {
+      languages.map((lang) => (
+        <TermLanguageCard content={fiche.content[lang.code]} lang={lang.code} />
+      ))
+    }
+  </div>
 </Layout>
