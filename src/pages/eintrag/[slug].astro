@@ -34,9 +34,15 @@ const fiche = await getFiche(props.entry_id)
 
   <div class="flex gap-6 flex-wrap justify-center">
     {
-      languages.map((lang) => (
-        <TermLanguageCard content={fiche.content[lang.code]} lang={lang.code} />
-      ))
+      languages.map(
+        (lang) =>
+          fiche.content[lang.code]?.terms?.[0] && (
+            <TermLanguageCard
+              content={fiche.content[lang.code]}
+              lang={lang.code}
+            />
+          )
+      )
     }
   </div>
 </Layout>
