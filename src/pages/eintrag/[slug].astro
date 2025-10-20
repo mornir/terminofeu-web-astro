@@ -16,14 +16,12 @@ export function getStaticPaths() {
 const { props } = Astro
 
 const fiche = await getFiche(props.entry_id)
-
-const selectedLanguages = ['de']
 ---
 
 <Layout title="Fiche">
   <AlpineSearchBox />
 
-  <div
+  <!--   <div
     class={`grid grid-cols-1 gap-6 ${
       selectedLanguages.length === 1
         ? 'lg:grid-cols-1 max-w-2xl mx-auto'
@@ -32,9 +30,9 @@ const selectedLanguages = ['de']
           : 'lg:grid-cols-3'
     }`}
   >
-  </div>
+  </div> -->
 
-  <div class="flex gap-6 flex-wrap">
+  <div class="flex gap-6 flex-wrap justify-center">
     {
       languages.map((lang) => (
         <TermLanguageCard content={fiche.content[lang.code]} lang={lang.code} />
