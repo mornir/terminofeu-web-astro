@@ -3,6 +3,7 @@
 @theme {
   --color-primary: #1a0e74;
   --color-accent: #c1295d;
+  --color-light: #fda4af;
 }
 
 [x-cloak] {

@@ -5,7 +5,7 @@ import { Search, CornerDownLeft } from '@lucide/astro'
 <form
   x-data="search"
   x-init="$refs.searchInput.focus()"
-  class="relative flex-1 max-w-lg w-full"
+  class="relative"
   @submit.prevent="goToFiche"
 >
   <div class="relative flex items-center">
@@ -28,7 +28,7 @@ import { Search, CornerDownLeft } from '@lucide/astro'
       aria-controls="search-list"
       :aria-expanded="showBox"
       :aria-activedescendant="searchResults.length ? `search-item-${selectedIndex}` : ''"
-      class="w-full pl-14 p-4 shadow-md focus:outline-none rounded-lg focus:border-accent border-2 border-primary hover:border-accent text-xl"
+      class="w-full pl-14 p-4 shadow-md focus:outline-none rounded-lg focus:border-accent border-2 border-primary hover:border-accent text-xl bg-white"
       placeholder="Rechercher un terme allemand"
       @keydown.arrow-down.prevent=" moveDownList()"
       @keydown.arrow-up.prevent="moveUpList()"

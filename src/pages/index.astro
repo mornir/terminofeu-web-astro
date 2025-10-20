@@ -8,11 +8,11 @@ const locale = getLocale(Astro.url)
 ---
 
 <Layout title="Suche">
-  <div class="grid justify-center items-center h-screen -mt-24">
-    <div>
-      <div class="flex items-center justify-center mb-6">
-        <Flame class="w-12 h-12 text-accent" />
-        <h1 class="text-5xl">Terminofeu</h1>
+  <div class="grid justify-center items-center h-screen -mt-24 auto-cols-fr">
+    <div class="max-w-lg w-full mx-auto">
+      <div class="flex items-center justify-center mb-8">
+        <Flame class="w-14 h-14 text-accent" />
+        <h1 class="text-6xl">Terminofeu</h1>
       </div>
       <AlpineSearchBox />
     </div>
