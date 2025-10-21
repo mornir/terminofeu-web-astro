@@ -77,7 +77,7 @@ import { Search, CornerDownLeft, Check } from '@lucide/astro'
   </div>
   <div class="flex gap-x-4 justify-center">
     <template x-for="lang in languages">
-      <div class="bg-black text-white rounded-lg py-1 px-3">
+      <div>
         <input
           class="hidden"
           type="checkbox"
@@ -86,8 +86,17 @@ import { Search, CornerDownLeft, Check } from '@lucide/astro'
           x-model="$store.global.langs"
           @change="if ($store.global.langs.length === 0) $store.global.langs = [lang.code]"
         />
-        <label :for="'lang-' + lang.code" x-text="lang.name"></label>
-        <Check class="w-6 h-6 text-white" />
+        <label
+          :for="'lang-' + lang.code"
+          class="capitalize w-max bg-black text-white rounded-lg py-1 px-3 flex items-center gap-3"
+        >
+          <div x-html="lang.flag" class="w-4 h-3"></div>
+          <span x-text="lang.name"></span>
+          <Check
+            class="w-5 h-5"
+            x-show="$store.global.langs.includes(lang.code)"
+          />
+        </label>
       </div>
     </template>
   </div>
