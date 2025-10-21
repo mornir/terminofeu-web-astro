@@ -1,6 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import AlpineSearchBox from '@/components/AlpineSearchBox.astro'
+import Search from '@/components/Search.astro'
 import TermLanguageCard from '@/components/TermLanguageCard.astro'
 import fiches from '@/terms-list.json'
 import { getFiche } from '@/js/sanity'
@@ -19,7 +19,7 @@ const fiche = await getFiche(props.entry_id)
 ---
 
 <Layout title="Fiche">
-  <AlpineSearchBox />
+  <Search />
 
   <div class="flex gap-6 flex-wrap justify-center mt-16">
     {
