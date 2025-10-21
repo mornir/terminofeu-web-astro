@@ -28,7 +28,7 @@ const fiche = await getFiche(props.entry_id)
           fiche.content[lang.code]?.terms?.[0] && (
             <TermLanguageCard
               content={fiche.content[lang.code]}
-              lang={lang.code}
+              language={lang}
             />
           )
       )

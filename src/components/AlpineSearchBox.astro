@@ -1,5 +1,5 @@
 ---
-import { Search, CornerDownLeft } from '@lucide/astro'
+import { Search, CornerDownLeft, Check } from '@lucide/astro'
 ---
 
 <form
@@ -77,8 +77,9 @@ import { Search, CornerDownLeft } from '@lucide/astro'
   </div>
   <div class="flex gap-x-4 justify-center">
     <template x-for="lang in languages">
-      <div>
+      <div class="bg-black text-white rounded-lg py-1 px-3">
         <input
+          class="hidden"
           type="checkbox"
           :id="'lang-' + lang.code"
           :value="lang.code"
@@ -86,6 +87,7 @@ import { Search, CornerDownLeft } from '@lucide/astro'
           @change="if ($store.global.langs.length === 0) $store.global.langs = [lang.code]"
         />
         <label :for="'lang-' + lang.code" x-text="lang.name"></label>
+        <Check class="w-6 h-6 text-white" />
       </div>
     </template>
   </div>

@@ -1,15 +1,6 @@
 ---
 import { PortableText } from 'astro-portabletext'
-import { languages } from '@/i18n/config'
-
-interface Props {
-  content: any
-  lang: 'de' | 'fr'
-}
-
-const { content, lang } = Astro.props
-
-const language = languages.find((l) => l.code === lang)!
+const { content, language } = Astro.props
 ---
 
 <div x-data={`{ code: '${language.code}' }`}>
