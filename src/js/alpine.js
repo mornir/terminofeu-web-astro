@@ -2,7 +2,6 @@ import Fuse from 'fuse.js'
 import persist from '@alpinejs/persist'
 
 import list from '../terms-list.json'
-import { languages } from '@/i18n/config'
 
 const fuseOptions = {
   keys: ['term', 'lang'],
@@ -42,7 +41,6 @@ export default (Alpine) => {
     searchPattern: '',
     showBox: false,
     selectedIndex: 0,
-    languages: languages,
     moveUpList() {
       this.selectedIndex > 0
         ? this.selectedIndex--

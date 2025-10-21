@@ -5,7 +5,7 @@ import { Search, CornerDownLeft } from '@lucide/astro'
 <form
   x-data="search"
   x-init="$refs.searchInput.focus()"
-  class="relative flex-1 max-w-lg w-full"
+  class="relative"
   @submit.prevent="goToFiche"
 >
   <div class="relative flex items-center">
@@ -28,7 +28,7 @@ import { Search, CornerDownLeft } from '@lucide/astro'
       aria-controls="search-list"
       :aria-expanded="showBox"
       :aria-activedescendant="searchResults.length ? `search-item-${selectedIndex}` : ''"
-      class="w-full pl-14 p-4 shadow-md focus:outline-none rounded-lg focus:border-accent border-2 border-primary hover:border-accent text-xl"
+      class="w-full pl-14 p-4 shadow-md focus:outline-none rounded-lg focus:border-accent border-2 border-primary hover:border-accent text-xl bg-white"
       placeholder="Rechercher un terme allemand"
       @keydown.arrow-down.prevent=" moveDownList()"
       @keydown.arrow-up.prevent="moveUpList()"
@@ -74,19 +74,5 @@ import { Search, CornerDownLeft } from '@lucide/astro'
     >
       Aucun résultat pour <b x-text="searchPattern"></b>
     </p>
-  </div>
-  <div class="flex gap-x-4 justify-center">
-    <template x-for="lang in languages">
-      <div>
-        <input
-          type="checkbox"
-          :id="'lang-' + lang.code"
-          :value="lang.code"
-          x-model="$store.global.langs"
-          @change="if ($store.global.langs.length === 0) $store.global.langs = [lang.code]"
-        />
-        <label :for="'lang-' + lang.code" x-text="lang.name"></label>
-      </div>
-    </template>
   </div>
 </form>
