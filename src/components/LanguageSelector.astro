@@ -5,7 +5,7 @@ import { Check } from '@lucide/astro'
 
 <span class="block text-center text-sm text-muted">Suche in Sprachen:</span>
 <div
-  class="flex gap-x-4 justify-center mt-3"
+  class="flex gap-4 justify-center mt-3 flex-wrap"
   x-data={`{ langs: ${JSON.stringify(languages)} }`}
 >
   <template x-for="lang in langs">

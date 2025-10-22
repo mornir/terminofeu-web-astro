@@ -10,7 +10,7 @@ import { Search, CornerDownLeft } from '@lucide/astro'
 >
   <div class="relative flex items-center">
     <label for="search-field" class="sr-only"
-      >Rechercher un terme allemand</label
+      >Brandschutzbegriffe suchen...</label
     >
     <Search class="w-10 h-10 absolute pointer-events-none text-gray-400 pl-4" />
     <input
@@ -29,7 +29,7 @@ import { Search, CornerDownLeft } from '@lucide/astro'
       :aria-expanded="showBox"
       :aria-activedescendant="searchResults.length ? `search-item-${selectedIndex}` : ''"
       class="w-full pl-14 p-4 shadow-md focus:outline-none rounded-lg focus:border-accent border-2 border-primary hover:border-accent text-xl bg-white"
-      placeholder="Rechercher un terme allemand"
+      placeholder="Brandschutzbegriffe suchen..."
       @keydown.arrow-down.prevent=" moveDownList()"
       @keydown.arrow-up.prevent="moveUpList()"
       @input="selectedIndex = 0"
