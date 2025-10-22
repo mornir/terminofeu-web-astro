@@ -20,7 +20,8 @@ import { Check } from '@lucide/astro'
       />
       <label
         :for="'lang-' + lang.code"
-        class="capitalize w-max bg-black text-white rounded-lg py-1 px-3 flex items-center gap-3"
+        class="capitalize w-max rounded-lg py-1 px-3 flex items-center gap-3 border border-muted"
+        :class="$store.global.langs.includes(lang.code) ? 'bg-gray-900 text-white' : 'bg-white text-noir'"
       >
         <div x-html="lang.flag" class="w-4 h-3"></div>
         <span x-text="lang.name"></span>
