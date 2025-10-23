@@ -1,18 +1,18 @@
 ---
-
+import { languages } from '@/i18n/config'
 ---
 
-<footer class="bg-white border-t border-gray-200 mt-24">
-  <div class="max-w-7xl mx-auto px-6 py-8">
+<footer class="bg-white border-t border-gray-200">
+  <div class="max-w-7xl mx-auto px-6 pt-8 pb-6">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
         <h3 class="mb-4 text-gray-900">Über Terminofeu</h3>
         <p class="text-sm text-gray-600">
-          Terminofeu enthält die im SIA-Normenwerk definierten Begriffe in
-          deutscher, französischer und wenn vorhanden in italienischer Sprache.
-          Die Datenbank dokumentiert den terminologischen Gesamtbestand der vom
-          Schweizerischen Ingenieur- und Architektenverein herausgegebenen
-          Normen, Ordnungen und Merkblätter.
+          Terminofeu enthält die im Anhang 2 der BSV 2026 definierten Begriffe
+          in deutscher, französischer und in italienischer Sprache. Die
+          Datenbank enthält auch Begriffe, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Asperiores assumenda debitis ad impedit
+          illo, deleniti at dignissimos.
         </p>
       </div>
       <div>
@@ -37,17 +37,24 @@
       </div>
       <div>
         <h3 class="mb-4 text-gray-900">Sprachen</h3>
-        <ul class="space-y-2 text-sm text-gray-600">
-          <li>🇩🇪 Deutsch</li>
-          <li>🇫🇷 Français</li>
-          <li>🇮🇹 Italiano</li>
+        <ul class="space-y-2">
+          {
+            languages.map((lang) => (
+              <li class="flex items-center gap-2">
+                <div set:html={lang.flag} class="w-4 h-3" />
+                <span class="text-sm text-gray-600 capitalize">
+                  {lang.name}
+                </span>
+              </li>
+            ))
+          }
         </ul>
       </div>
     </div>
     <div
-      class="border-t mt-8 pt-8 text-center text-sm text-gray-500 border-gray-200"
+      class="border-t pt-6 mt-8 text-center text-sm text-gray-500 border-gray-200"
     >
-      © 2024 Terminofeu. Alle Rechte vorbehalten.
+      © 2025 Vereinigung Kantonaler Feuerversicherungen (VKF)
     </div>
   </div>
 </footer>
