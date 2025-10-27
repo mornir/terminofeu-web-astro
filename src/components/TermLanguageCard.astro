@@ -1,94 +1,78 @@
 ---
 import { PortableText } from 'astro-portabletext'
 const { content, language } = Astro.props
+import { FileText, BookOpen } from '@lucide/astro'
 ---
 
-<div x-data={`{ code: '${language.code}' }`}>
+<article x-data={`{ code: '${language.code}' }`}>
   <div :class="!$store.global.langs.includes(code) && 'hidden'">
-    <div class="flex flex-col gap-6 rounded-xl border h-full max-w-xl bg-white">
-      <div class="pb-4">
+    <div
+      class="flex flex-col gap-6 rounded-xl border-muted border h-full max-w-xl bg-white p-6"
+    >
+      <header>
         <div class="flex items-center justify-between">
-          <div class="flex items-center gap-3">
-            <div set:html={language.flag} class="w-4 h-3" />
-            <h3 class="text-xl text-gray-900">{language.name}</h3>
-          </div>
-          <div class="text-xs font-medium">
-            {language.code.toUpperCase()}
-          </div>
+          <h3 class="text-xl text-gray-900 capitalize">{language.name}</h3>
+          <div set:html={language.flag} class="w-5 h-4" />
         </div>
-      </div>
+      </header>
 
-      <div class="space-y-0 p-6 pt-2">
-        <!-- Designation -->
-        <div class="py-5 border-l-4 border-gray-300 pl-5 bg-gray-50/50">
-          <h4 class="text-xs text-gray-500 uppercase tracking-wide mb-3">
-            Begriff
-          </h4>
-          <p class="text-2xl text-gray-900 leading-tight">
-            {content.terms[0].designation}
-          </p>
+      <!-- Designation -->
+      <section>
+        <h4 class="text-xs text-gray-500 uppercase tracking-wide mb-3">
+          Begriff
+        </h4>
+        <p class="text-2xl text-gray-900 leading-tight">
+          {content.terms[0].designation}
+        </p>
+      </section>
 
-          <hr class="my-6" />
+      <hr class="my-6 border-muted border" />
 
-          <!-- Definition -->
-          <div class="py-5 pl-5 border-l-4 border-transparent">
-            <h4 class="text-xs text-gray-500 uppercase tracking-wide mb-3">
-              Definition
-            </h4>
-            <div class="text-gray-800 leading-relaxed">
-              <PortableText value={content?.definition} />
-            </div>
-          </div>
-
-          <!-- Notes 
-    {
-      content.notes && content.notes.length > 0 && (
-        <>
-          <hr class="my-6" />
-          <div class="py-5 pl-5 border-l-4 border-transparent">
-            <div class="flex items-center gap-2 mb-3">
-              <FileText class="h-4 w-4 text-gray-600" />
-              <h4 class="text-xs text-gray-500 uppercase tracking-wide">
-                Technische Hinweise
-              </h4>
-            </div>
-            <ol class="list-decimal list-outside ml-5 space-y-2.5 text-sm text-gray-700">
-              {content.notes.map((note, index) => (
-                <li key={index} class="leading-relaxed pl-1">
-                  {note}
-                </li>
-              ))}
-            </ol>
-          </div>
-        </>
-      )
-    }-->
-
-          <!-- Examples
-    {
-      content.examples && content.examples.length > 0 && (
-        <>
-          <hr class="my-6" />
-          <div class="py-5 pl-5 border-l-4 border-transparent">
-            <div class="flex items-center gap-2 mb-3">
-              <BookOpen class="h-4 w-4 text-gray-600" />
-              <h4 class="text-xs text-gray-500 uppercase tracking-wide">
-                Beispiele
-              </h4>
-            </div>
-            <ul class="list-disc list-outside ml-5 space-y-2.5 text-sm text-gray-700">
-              {content.examples.map((example, index) => (
-                <li key={index} class="leading-relaxed pl-1">
-                  {example}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </>
-      )
-    } -->
+      <!-- Definition -->
+      <section class="py-5">
+        <h4 class="text-xs text-gray-500 uppercase tracking-wide mb-3">
+          Definition
+        </h4>
+        <div class="text-gray-800 leading-relaxed">
+          <PortableText value={content?.definition} />
         </div>
-      </div>
+      </section>
+
+      <!-- Notes -->
+      {
+        content.note && (
+            <hr class="my-6" />
+            <div class="py-5">
+              <div class="flex items-center gap-2 mb-3">
+                <FileText class="h-4 w-4 text-gray-600" />
+                <h4 class="text-xs text-gray-500 uppercase tracking-wide">
+                  Anmerkungen
+                </h4>
+              </div>
+              <div class="text-gray-800 leading-relaxed portabletext">
+                <PortableText value={content.note} />
+              </div>
+            </div>
+        )
+      }
+
+      <!-- Examples -->
+      {
+        content.examples && (
+            <hr class="my-6" />
+            <div class="py-5">
+              <div class="flex items-center gap-2 mb-3">
+                <BookOpen class="h-4 w-4 text-gray-600" />
+                <h4 class="text-xs text-gray-500 uppercase tracking-wide">
+                  Beispiele
+                </h4>
+              </div>
+              <div class="text-gray-800 leading-relaxed portabletext">
+                <PortableText value={content.examples} />
+              </div>
+            </div>
+        )
+      }
     </div>
   </div>
-</div>
+</article>
