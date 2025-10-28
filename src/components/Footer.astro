@@ -1,5 +1,7 @@
 ---
 import { languages } from '@/i18n/config'
+import { getLocaleUrl } from 'astro-i18n-aut'
+const currentPath = Astro.url.pathname
 ---
 
 <footer class="bg-white border-t border-gray-200">
@@ -41,11 +43,16 @@ import { languages } from '@/i18n/config'
           <ul class="space-y-2">
             {
               languages.map((lang) => (
-                <li class="flex items-center gap-2">
-                  <div set:html={lang.flag} class="w-4 h-3" />
-                  <span class="text-sm text-gray-600 capitalize">
-                    {lang.name}
-                  </span>
+                <li>
+                  <a
+                    href={getLocaleUrl(currentPath, lang.code)}
+                    class="flex items-center gap-2"
+                  >
+                    <div set:html={lang.flag} class="w-4 h-3" />
+                    <span class="text-sm text-gray-600 capitalize">
+                      {lang.name}
+                    </span>
+                  </a>
                 </li>
               ))
             }
