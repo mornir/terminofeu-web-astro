@@ -4,8 +4,11 @@ import Search from '@/components/Search.astro'
 import TermLanguageCard from '@/components/TermLanguageCard.astro'
 import fiches from '@/terms-list.json'
 import { getFiche } from '@/js/sanity'
+import { getLocale } from 'astro-i18n-aut'
 
 import { languages } from '@/i18n/config'
+
+const locale = getLocale(Astro.url)
 
 export function getStaticPaths() {
   return fiches.map((fiche) => {
@@ -16,9 +19,11 @@ export function getStaticPaths() {
 const { props } = Astro
 
 const fiche = await getFiche(props.entry_id)
+
+const vedette = fiche[`${locale}Title`] ?? 'Fiche'
 ---
 
-<Layout title="Fiche">
+<Layout title={vedette}>
   <Search />
 
   <div class="flex gap-6 flex-wrap justify-center mt-16 mb-24">
