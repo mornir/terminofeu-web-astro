@@ -4,7 +4,20 @@ import { slugifyWithCounter } from '@sindresorhus/slugify'
 
 const slugify = slugifyWithCounter()
 
-function generateTermsList(entries = [], lang) {
+function removeDuplicates(arr) {
+  const seen = new Set()
+  return arr.filter((obj) => {
+    // Create a string key by combining the values of entry_id and term
+    const key = JSON.stringify([obj.entry_id, obj.term])
+    if (seen.has(key)) {
+      return false
+    }
+    seen.add(key)
+    return true
+  })
+}
+
+function getDesignations(entries = [], lang) {
   const property = 'terms_' + lang
   return entries
     .flatMap((entry) => {
@@ -41,14 +54,16 @@ async function main() {
 
   const entries = await getTerms()
 
-  const terms_de = generateTermsList(entries, 'de')
-  const terms_fr = generateTermsList(entries, 'fr')
-  const terms_it = generateTermsList(entries, 'it')
+  const terms_de = getDesignations(entries, 'de')
+  const terms_fr = getDesignations(entries, 'fr')
+  const terms_it = getDesignations(entries, 'it')
 
-  const terms = [...terms_de, ...terms_fr, ...terms_it].map((t) => ({
-    slug: slugify(t.term),
-    ...t,
-  }))
+  const terms = removeDuplicates([...terms_de, ...terms_fr, ...terms_it]).map(
+    (t) => ({
+      slug: slugify(t.term),
+      ...t,
+    })
+  )
 
   fs.writeFileSync(
     'src/terms-list.json',
